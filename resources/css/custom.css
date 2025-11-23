@@ -1,0 +1,187 @@
+body { 
+    font-family: 'Inter', sans-serif; 
+}
+
+h1, h2, h3, h4, h5, h6, .font-heading { 
+    font-family: 'Bricolage Grotesque', sans-serif; 
+}
+
+p {
+    line-height: 1.7;
+    color: #6E777F;
+}
+
+.bricolage-font {
+    font-family: 'Bricolage Grotesque', sans-serif; 
+}
+
+.btn-primary {
+    background-color: #CE2919;
+    padding: 10px 24px;
+}
+
+.btn-primary:hover {
+    background-color: #DC2626;
+    scale: 105%;
+}
+
+.card {
+    background-color: #fff;
+    transition: all 0.6s ease;
+}
+
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.fade-in-up.show {
+    animation: fadeInUp 0.8s ease-in forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.float-animation {
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+}
+
+/* NAVBAR — SCROLL EFFECT */
+nav.scrolled {
+    background: white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+nav.scrolled a,
+nav.scrolled .nav-link,
+nav.scrolled .mobile-dropdown-toggle {
+    color: #003A63 !important;
+}
+
+nav.scrolled a:hover,
+nav.scrolled a.active {
+    color: #CE2919 !important;
+}
+
+nav.scrolled .mobile-menu-icon {
+    color: #003A63;
+}
+
+/* NAV LINK UNDERLINE ANIMATION */
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background: #CE2919;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 80%;
+}
+
+/* DROPDOWN DESKTOP */
+.dropdown-menu {
+    margin-top: 20px;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(10px);
+    transition:
+        opacity 0.3s ease,
+        transform 0.3s ease,
+        visibility 0s linear 1s;
+}
+
+.dropdown-container {
+    position: relative;
+}
+
+.dropdown-container::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    height: 25px; /* hover area penghubung */
+    background: transparent;
+}
+
+.dropdown-container:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(0);
+    transition-delay: 0s; /* Hilangkan delay saat hover */
+}
+
+/* Highlight bar kiri */
+.dropdown-item {
+    position: relative;
+}
+
+.dropdown-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 3px;
+    height: 0;
+    background: #CE2919;
+    transition: height 0.3s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.dropdown-item:hover::before {
+    height: 100%;
+}
+
+/* MOBILE DROPDOWN — Full Animation */
+.mobile-dropdown-toggle i {
+    transition: transform 0.3s ease;
+}
+
+.mobile-dropdown-toggle.active i {
+    transform: rotate(180deg);
+}
+
+.mobile-dropdown-content {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.4s ease, opacity 0.3s ease;
+}
+
+.mobile-dropdown-content.active {
+    max-height: 500px;
+    opacity: 1;
+}
+
+/* RESPONSIVE — Nonaktifkan dropdown desktop di mobile */
+@media (max-width: 1024px) {
+    .dropdown-menu {
+        display: none;
+    }
+}

@@ -1,0 +1,29 @@
+.contact-hero {
+    /* background: 
+        linear-gradient(135deg, rgba(0, 59, 92, 0.95) 0%, rgba(0, 59, 92, 0.85) 100%),
+        url(''); */
+    background-color: lightgray;
+    background-size: auto, 60px 60px, cover;
+    background-position: center;
+}
+
+.info-card:hover {
+    border-color: #CE2919;
+}
+
+.info-card .icon-box {
+    background-color: #003B5C;
+}
+
+.info-card:hover .icon-box {
+    background-color: #CE2919;
+}
+
+.info-card .icon-title {
+    color: #003B5C;
+    font-weight: bolder;
+}
+
+.info-card:hover .icon-title {
+    color: #CE2919;
+}

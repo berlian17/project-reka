@@ -1,0 +1,74 @@
+.hero-slide {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#hero-slide-1 {
+    background-color: lightgray;
+}
+
+#hero-slide-2 {
+    background-color: lightgray;
+}
+
+#hero-slide-3 {
+    background-color: lightgray;
+}
+
+#prevHero:hover,
+#nextHero:hover {
+    background-color: gray;
+    padding: 3px;
+}
+
+.stat-card {
+    background: linear-gradient(135deg, #003A63 0%, #004d73 100%);
+    transition: all 0.6s ease;
+}
+
+.project-card img {
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-card:hover img {
+    transform: scale(1.15);
+}
+
+@keyframes clientScroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.animate-scroll {
+    animation: clientScroll 30s linear infinite;
+}
+
+.carousel-container::before,
+.carousel-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 150px;
+    height: 100%;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.carousel-container::before {
+    left: 0;
+    background: linear-gradient(to right, white, transparent);
+}
+
+.carousel-container::after {
+    right: 0;
+    background: linear-gradient(to left, white, transparent);
+}
+
+.logo-item {
+    transition: all 0.3s ease;
+}

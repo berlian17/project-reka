@@ -1,0 +1,8 @@
+.about-hero {
+    /* background: 
+        linear-gradient(135deg, rgba(0, 59, 92, 0.95) 0%, rgba(0, 59, 92, 0.85) 100%),
+        url(''); */
+    background-color: lightgray;
+    background-size: auto, 60px 60px, cover;
+    background-position: center;
+}
