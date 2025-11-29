@@ -24,6 +24,6 @@ prevBtn.addEventListener('click', () => {
 setInterval(() => {
     index = (index + 1) % heroSlides.length;
     showSlide(index);
-}, 10000); // 10 detik
+}, 8000); // 8 detik
 
 showSlide(index);

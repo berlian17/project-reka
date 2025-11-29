@@ -10,10 +10,11 @@
     <section class="contact-hero min-h-[60vh] flex items-center justify-center pt-20">
         <div class="container mx-auto px-4 lg:px-8 text-center text-white">
             <div class="max-w-4xl mx-auto">
-                <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight fade-in-up">
+                <h1 class="hero-title text-5xl md:text-6xl font-bold mb-6 leading-tight fade-in-up">
                     Contact Us
                 </h1>
-                <p class="text-xl !text-white fade-in-up" style="animation-delay: 0.2s;">
+                <div class="w-[15%] h-1 bg-secondary mx-auto mb-8 fade-in-up" style="animation-delay: 0.2s;"></div>
+                <p class="text-xl text-white! fade-in-up" style="animation-delay: 0.2s;">
                     Have a question or need assistance? We're here to help! Get in touch with our team today
                 </p>
             </div>
@@ -44,7 +45,7 @@
 
                         <div class="card info-card rounded-2xl p-6 mb-5 border border-gray-300 hover:border-secondary">
                             <div class="flex items-start gap-4">
-                                <div class="icon-box w-14 h-14 rounded-xl flex items-center justify-center flex-shrink-0 my-auto">
+                                <div class="icon-box w-14 h-14 rounded-xl flex items-center justify-center shrink-0 my-auto">
                                     <i class="fas fa-location-dot text-white text-xl"></i>
                                 </div>
                                 <div>
@@ -59,7 +60,7 @@
                         <a href="tel:021-8355317">
                             <div class="card info-card rounded-2xl p-6 mb-5 border border-gray-300 hover:border-secondary">
                                 <div class="flex items-start gap-4">
-                                    <div class="icon-box w-14 h-14 rounded-xl flex items-center justify-center flex-shrink-0 my-auto">
+                                    <div class="icon-box w-14 h-14 rounded-xl flex items-center justify-center shrink-0 my-auto">
                                         <i class="fas fa-phone text-white text-xl"></i>
                                     </div>
                                     <div>
@@ -75,7 +76,7 @@
                         <a href="mailto:marketing@rekaindo.com">
                             <div class="card info-card rounded-2xl p-6 mb-5 border border-gray-300 hover:border-secondary">
                                 <div class="flex items-start gap-4">
-                                    <div class="icon-box w-14 h-14 rounded-xl flex items-center justify-center flex-shrink-0 my-auto">
+                                    <div class="icon-box w-14 h-14 rounded-xl flex items-center justify-center shrink-0 my-auto">
                                         <i class="fas fa-envelope text-white text-xl"></i>
                                     </div>
                                     <div>
@@ -189,7 +190,7 @@
                             {{-- Submit --}}
                             <button 
                                 type="submit" 
-                                class="btn-primary w-full text-white rounded-lg font-semibold text-lg shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all flex items-center justify-center gap-3 group"
+                                class="btn-primary w-full rounded-lg font-semibold text-lg shadow-2xl hover:shadow-3xl flex items-center justify-center gap-3 group"
                             >
                                 <i class="fas fa-paper-plane text-xl"></i>
                                 Send Message

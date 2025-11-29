@@ -1,0 +1,49 @@
+.service-hero {
+    position: relative;
+    background:
+        linear-gradient(
+            rgba(0, 35, 60, 0.85),
+            rgba(0, 58, 99, 0.60)
+        ),
+        url("../../images/pages/services-bg.webp");
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.process-step-primary,
+.process-step-secondary {
+    position: relative;
+}
+
+.process-step-primary::after {
+    content: '';
+    position: absolute;
+    top: 38px;
+    right: -50%;
+    width: 85%;
+    height: 4px;
+    background: linear-gradient(90deg, #CE2919, #003A63);
+}
+
+.process-step-secondary::after {
+    content: '';
+    position: absolute;
+    top: 38px;
+    right: -50%;
+    width: 85%;
+    height: 4px;
+    background: linear-gradient(90deg, #003A63, #CE2919);
+}
+
+.process-step-primary:last-child::after,
+.process-step-secondary:last-child::after {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .process-step-primary::after,
+    .process-step-secondary::after {
+        display: none;
+    }
+}

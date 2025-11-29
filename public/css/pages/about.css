@@ -1,8 +1,12 @@
 .about-hero {
-    /* background: 
-        linear-gradient(135deg, rgba(0, 59, 92, 0.95) 0%, rgba(0, 59, 92, 0.85) 100%),
-        url(''); */
-    background-color: lightgray;
-    background-size: auto, 60px 60px, cover;
+    position: relative;
+    background:
+        linear-gradient(
+            rgba(0, 35, 60, 0.85),
+            rgba(0, 58, 99, 0.60)
+        ),
+        url("../../images/pages/about-us-bg.webp");
+    background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
 }

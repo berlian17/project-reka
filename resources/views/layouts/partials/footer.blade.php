@@ -1,14 +1,14 @@
-<footer id="contact" class="bg-gradient-to-br from-primary to-blue-950 text-white">
+<footer id="contact" class="bg-linear-to-br from-primary to-blue-950 text-white">
     <div class="container mx-auto px-4 lg:px-8">
         <div class="grid grid-cols-1 md:grid-cols-12 gap-8 py-18">
             <div class="md:col-span-5">
                 <div class="flex mb-6">
                     <img src="{{ asset('images/REKA-INTERNATIONAL-SERVICES_LOGO-2.png') }}" alt="Reka International Services" class="h-14 w-auto" />
                 </div>
-                <p class="!text-white mb-6 max-w-sm">
+                <p class="text-white! mb-6 max-w-sm">
                     Providing reliable engineering, procurement, and construction solutions for water and wastewater treatment since 2007.
                 </p>
-                <p class="!text-secondary font-bold text-xl mb-6">Care to Green Environment</p>
+                <p class="text-secondary! font-bold text-xl mb-6">Care to Green Environment</p>
                 
                 <div class="flex gap-3">
                     <a href="#" class="w-11 h-11 bg-white/10 backdrop-blur-sm rounded-lg flex items-center justify-center hover:bg-secondary hover:scale-110 transition-all">
@@ -27,7 +27,7 @@
             </div>
             
             <div class="md:col-span-4">
-                <h3 class="text-xl font-bold mb-2">Our Services</h3>
+                <h3 class="mb-2">Our Services</h3>
                 <div class="w-[15%] h-1 bg-secondary mb-6"></div>
                 <ul class="space-y-3">
                     <li>
@@ -70,11 +70,11 @@
             </div>
             
             <div class="md:col-span-3">
-                <h3 class="text-xl font-bold mb-2">Contact Info</h3>
+                <h3 class="mb-2">Contact Info</h3>
                 <div class="w-[15%] h-1 bg-secondary mb-6"></div>
                 <ul class="space-y-4">
                     <li class="flex items-start gap-3">
-                        <i class="fas fa-map-marker-alt text-secondary mt-1 flex-shrink-0"></i>
+                        <i class="fas fa-map-marker-alt text-secondary mt-1 shrink-0"></i>
                         <span class="leading-relaxed">Jl. R. Suprapto No. 505 Cjengkel Setu, Kabupaten Bekasi, 17520</span>
                     </li>
                     <li class="flex items-center gap-3">
@@ -90,7 +90,7 @@
         </div>
         
         <div class="border-t border-white py-6 flex justify-center text-sm">
-            <p class="!text-white">&copy; {{ date('Y') }} PT. Reka International Services. All Rights Reserved.</p>
+            <p class="text-white!">&copy; {{ date('Y') }} PT. Reka International Services. All Rights Reserved.</p>
         </div>
     </div>
 </footer>

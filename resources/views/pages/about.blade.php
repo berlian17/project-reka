@@ -10,10 +10,11 @@
     <section class="about-hero min-h-[60vh] flex items-center justify-center pt-20">
         <div class="container mx-auto px-4 lg:px-8 text-center text-white">
             <div class="max-w-4xl mx-auto">
-                <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight fade-in-up">
+                <h1 class="hero-title text-5xl md:text-6xl font-bold mb-6 leading-tight fade-in-up">
                     About Us
                 </h1>
-                <p class="text-xl !text-white fade-in-up" style="animation-delay: 0.2s;">
+                <div class="w-[15%] h-1 bg-secondary mx-auto mb-8 fade-in-up" style="animation-delay: 0.2s;"></div>
+                <p class="text-xl text-white! fade-in-up" style="animation-delay: 0.2s;">
                     Leading Water & Waste treatment Solutions Provider
                 </p>
             </div>
@@ -30,13 +31,13 @@
                         Building a Sustainable Future
                     </h2>
                     <div class="w-[25%] h-1 bg-secondary mt-2 mb-8"></div>
-                    <p class="leading-relaxed mb-6">
+                    <p class="leading-relaxed mb-4">
                         <strong>PT. REKA INTERNATIONAL SERVICES</strong>, established on May 10, 2007, is an Engineering, Procurement, and Construction (EPC) company providing comprehensive Water and Wastewater Treatment solutions for Industrial clients across Indonesia.
                     </p>
-                    <p class="leading-relaxed mb-6">
+                    <p class="leading-relaxed mb-4">
                         Over the years, REKA has expanded its operations to include Civil, Mechanical, Electrical, Piping, and Instrumentation (CMEPI) solutions, and maintenance projects. Since 2024, the company has also begun expanding into the automotive manufacturing sector, focusing on EDP coating, painting, and work order services.
                     </p>
-                    <p class="leading-relaxed mb-6">
+                    <p class="leading-relaxed">
                         Our strength lies in our unwavering commitment to quality, innovation, and environmental responsibility. Supported by a team of professional engineers, state-of-the-art equipment, and strong partnerships with leading international suppliers, we deliver innovative, efficient, and sustainable solutions tailored to meet the unique needs of each client.
                     </p>
                 </div>
@@ -53,25 +54,25 @@
     </section>
 
     {{-- Statistics --}}
-    <section class="py-32 bg-primary">
+    <section class="py-28 bg-primary">
         <div class="container mx-auto px-4 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
                 <div class="text-white p-8 text-center fade-in-up" data-delay="0">
                     <div class="bricolage-font text-6xl md:text-7xl font-bold text-secondary float-animation mb-4">18+</div>
-                    <p class="!text-white text-xl font-semibold mb-2">Years Experience</p>
-                    <p class="!text-white text-sm opacity-80">Serving industrial clients</p>
+                    <p class="text-white! text-xl font-semibold mb-2">Years Experience</p>
+                    <p class="text-white! text-sm opacity-80">Serving industrial clients</p>
                 </div>
                 
                 <div class="text-white p-8 text-center fade-in-up" data-delay="0">
                     <div class="bricolage-font text-6xl md:text-7xl font-bold text-secondary float-animation mb-4">14+</div>
-                    <p class="!text-white text-xl font-semibold mb-2">Projects Completed</p>
-                    <p class="!text-white text-sm opacity-80">Successful implementations</p>
+                    <p class="text-white! text-xl font-semibold mb-2">Projects Completed</p>
+                    <p class="text-white! text-sm opacity-80">Successful implementations</p>
                 </div>
                 
                 <div class="text-white p-8 text-center fade-in-up" data-delay="0">
                     <div class="bricolage-font text-6xl md:text-7xl font-bold text-secondary float-animation mb-4">19+</div>
-                    <p class="!text-white text-xl font-semibold mb-2">Industries Served</p>
-                    <p class="!text-white text-sm opacity-80">Diverse sectors</p>
+                    <p class="text-white! text-xl font-semibold mb-2">Industries Served</p>
+                    <p class="text-white! text-sm opacity-80">Diverse sectors</p>
                 </div>
             </div>
         </div>
@@ -96,7 +97,7 @@
                         To become a company that is highly competitive both in Quality and Quantity by always Attention to <strong>“Customer Satisfaction”</strong>.
                     </p>
                     <div class="mt-10 pt-8 border-t border-gray-200">
-                        <p class="text-sm font-bold">PT. REKA INTERNATIONAL SERVICES</p>
+                        <p class="italic text-sm font-semibold">PT. Reka International Services</p>
                     </div>
                 </div>
                 
@@ -113,7 +114,7 @@
                     </div>
                     <ul class="space-y-4">
                         <li class="flex items-start gap-4">
-                            <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center flex-shrink-0 my-auto">
+                            <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center shrink-0 my-auto">
                                 <i class="fas fa-check text-white text-sm"></i>
                             </div>
                             <p class="leading-relaxed">
@@ -121,7 +122,7 @@
                             </p>
                         </li>
                         <li class="flex items-start gap-4">
-                            <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center flex-shrink-0 my-auto">
+                            <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center shrink-0 my-auto">
                                 <i class="fas fa-check text-white text-sm"></i>
                             </div>
                             <p class="leading-relaxed">
@@ -129,7 +130,7 @@
                             </p>
                         </li>
                         <li class="flex items-start gap-4">
-                            <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center flex-shrink-0 my-auto">
+                            <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center shrink-0 my-auto">
                                 <i class="fas fa-check text-white text-sm"></i>
                             </div>
                             <p class="leading-relaxed">
@@ -160,7 +161,7 @@
                     <div class="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center mb-6">
                         <i class="fas fa-people-group text-white text-3xl"></i>
                     </div>
-                    <p class="!text-primary text-xl font-bold mb-4">
+                    <p class="text-primary! text-xl font-bold mb-4">
                         Experienced Team
                     </p>
                     <p class="leading-relaxed">
@@ -172,7 +173,7 @@
                     <div class="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center mb-6">
                         <i class="fas fa-cogs text-white text-3xl"></i>
                     </div>
-                    <p class="!text-primary text-xl font-bold mb-4">
+                    <p class="text-primary! text-xl font-bold mb-4">
                         Complete Solutions
                     </p>
                     <p class="leading-relaxed">
@@ -184,7 +185,7 @@
                     <div class="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center mb-6">
                         <i class="fas fa-certificate text-white text-3xl"></i>
                     </div>
-                    <p class="!text-primary text-xl font-bold mb-4">
+                    <p class="text-primary! text-xl font-bold mb-4">
                         Quality Assured
                     </p>
                     <p class="leading-relaxed">
@@ -196,7 +197,7 @@
                     <div class="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center mb-6">
                         <i class="fas fa-dollar-sign text-white text-3xl"></i>
                     </div>
-                    <p class="!text-primary text-xl font-bold mb-4">
+                    <p class="text-primary! text-xl font-bold mb-4">
                         Cost Effective
                     </p>
                     <p class="leading-relaxed">
@@ -208,7 +209,7 @@
                     <div class="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center mb-6">
                         <i class="fas fa-leaf text-white text-3xl"></i>
                     </div>
-                    <p class="!text-primary text-xl font-bold mb-4">
+                    <p class="text-primary! text-xl font-bold mb-4">
                         Environmental Focus
                     </p>
                     <p class="leading-relaxed">
@@ -220,7 +221,7 @@
                     <div class="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center mb-6">
                         <i class="fas fa-headset text-white text-3xl"></i>
                     </div>
-                    <p class="!text-primary text-xl font-bold mb-4">
+                    <p class="stext-primary! text-xl font-bold mb-4">
                         After Sales Support
                     </p>
                     <p class="leading-relaxed">
@@ -231,8 +232,85 @@
         </div>
     </section>
 
-    {{-- CTA --}}
+    {{-- ISO Certification --}}
     <section class="py-38 bg-white">
+        <div class="container mx-auto px-4 lg:px-8 relative z-10">
+            <div class="text-center mb-16 fade-in-up" data-delay="0">
+                <h2 class="text-4xl md:text-5xl font-bold text-primary leading-tight">
+                    Our Certifications
+                </h2>
+                <div class="w-[10%] h-1 bg-secondary mx-auto mt-2 mb-8"></div>
+                <p class="max-w-3xl mx-auto leading-relaxed">
+                    Committed to international quality standards and continuous improvement in all our services
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+                <div class="certification-card rounded-3xl shadow-2xl overflow-hidden border border-gray-200 group hover:shadow-3xl fade-in-up" data-delay="0">
+                    <div class="relative h-[500px] overflow-hidden bg-white pt-8 px-8">
+                        <div class="relative w-full h-full flex items-center justify-center">
+                            <img src="{{ asset('images/certificate/CERT ISO - ISO 14001-2015.webp') }}" 
+                                 alt="ISO certificate" 
+                                 class="max-w-full max-h-full object-contain rounded-lg transform cursor-pointer">
+                            <div class="absolute inset-0 bg-linear-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-lg"></div>
+
+                            {{-- Zoom Icon --}}
+                            <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                <button class="w-16 h-16 bg-primary hover:scale-110 backdrop-blur-sm rounded-full flex items-center justify-center">
+                                    <i class="fas fa-search-plus text-white text-2xl"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="p-8 bg-white">
+                        <div class="flex items-center gap-3">
+                            <div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center">
+                                <i class="fas fa-award text-primary text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-primary">ISO 14001:2015</h3>
+                                <p>Environmental Management System</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="certification-card rounded-3xl shadow-2xl overflow-hidden border border-gray-200 group hover:shadow-3xl fade-in-up" data-delay="0">
+                    <div class="relative h-[500px] overflow-hidden bg-white pt-8 px-8">
+                        <div class="relative w-full h-full flex items-center justify-center">
+                            <img src="{{ asset('images/certificate/CERT ISO - ISO 9001-2015.webp') }}" 
+                                 alt="ISO certificate" 
+                                 class="max-w-full max-h-full object-contain rounded-lg transform cursor-pointer">
+                            <div class="absolute inset-0 bg-linear-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-lg"></div>
+
+                            {{-- Zoom Icon --}}
+                            <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                <button class="w-16 h-16 bg-primary hover:scale-110 backdrop-blur-sm rounded-full flex items-center justify-center">
+                                    <i class="fas fa-search-plus text-white text-2xl"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="p-8 bg-white">
+                        <div class="flex items-center gap-3">
+                            <div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center">
+                                <i class="fas fa-award text-primary text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-primary">ISO 9001:2015</h3>
+                                <p>Quality Management System</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {{-- CTA --}}
+    <section class="py-38 bg-light">
         <div class="container mx-auto px-4 lg:px-8">
             <div class="text-center max-w-4xl mx-auto fade-in-up" data-delay="0">
                 <h2 class="text-4xl md:text-5xl font-bold text-primary leading-tight mb-2">
@@ -242,7 +320,7 @@
                     Let's discuss how we can help you achieve your goals with our innovative and sustainable solutions
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="{{ route('contact') }}" class="btn-primary text-white text-lg rounded-lg font-semibold inline-flex items-center justify-center px-12 py-5">
+                    <a href="{{ route('contact') }}" class="btn-primary text-lg rounded-lg font-semibold inline-flex items-center justify-center px-12 py-5">
                         Get In Touch
                     </a>
                 </div>

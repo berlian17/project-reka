@@ -17,22 +17,10 @@
 }
 
 #prevHero:hover,
-#nextHero:hover {
-    background-color: gray;
+#nextHero:hover,
+#nextSection:hover {
     padding: 3px;
-}
-
-.stat-card {
-    background: linear-gradient(135deg, #003A63 0%, #004d73 100%);
-    transition: all 0.6s ease;
-}
-
-.project-card img {
-    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.project-card:hover img {
-    transform: scale(1.15);
+    scale: 110px;
 }
 
 @keyframes clientScroll {

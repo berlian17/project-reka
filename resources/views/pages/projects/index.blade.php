@@ -10,11 +10,11 @@
     <section class="project-hero min-h-[60vh] flex items-center justify-center pt-20">
         <div class="container mx-auto px-4 lg:px-8 text-center text-white">
             <div class="max-w-4xl mx-auto">
-                <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight fade-in-up">
+                <h1 class="hero-title text-5xl md:text-6xl font-bold mb-6 leading-tight fade-in-up">
                     Our Projects
                 </h1>
                 <div class="w-[15%] h-1 bg-secondary mx-auto mb-8 fade-in-up" style="animation-delay: 0.2s;"></div>
-                <p class="text-xl !text-white fade-in-up" style="animation-delay: 0.3s;">
+                <p class="text-xl text-white! fade-in-up" style="animation-delay: 0.3s;">
                     Our documented projects from various industries showcasing excellence and innovation
                 </p>
             </div>
@@ -35,12 +35,12 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 max-w-6xl mx-auto">
-                <a href="{{ route('project.show') }}" class="card project-card rounded-3xl shadow-2xl overflow-hidden border border-gray-100 flex flex-col fade-in-up" data-delay="0">
+                <a href="{{ route('project.show', 1) }}" class="card project-card rounded-3xl shadow-2xl overflow-hidden border border-gray-100 flex flex-col fade-in-up" data-delay="0">
                     <div class="relative h-52 overflow-hidden">
                         <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=500&h=400&fit=crop" 
                              alt="Project" 
                              class="w-full h-full object-cover">
-                        <div class="absolute inset-0 bg-gradient-to-t from-primary/95 via-primary/50 to-transparent"></div>
+                        <div class="absolute inset-0 bg-linear-to-t from-primary/95 via-primary/50 to-transparent"></div>
                         <div class="absolute bottom-4 left-6">
                             <span class="inline-block bg-secondary text-white text-xs px-4 py-2 rounded-full font-semibold">
                                 Water & Waste Water Treatment (EPC)
@@ -55,7 +55,7 @@
                             Reverse Osmosis 50 m3/hour
                         </h3>
                         <p class="mb-4 leading-relaxed flex-1">
-                            Lorem ipsum dolor sit amet, consectetu adipiscing elit, varius tellus. Fusce a eros ullamcorper sapien diam pretium eget erat non magna sit luctus et ultri...
+                            Lorem ipsum dolor sit amet, consectetu adipiscing elit, varius tellus. Fusce a eros ullamcorper sapien diam pretium eget...
                         </p>
                         <div class="inline-flex items-center text-secondary font-semibold gap-2 group mt-auto">
                             Read More 
@@ -69,7 +69,7 @@
                         <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=500&h=400&fit=crop" 
                              alt="Project" 
                              class="w-full h-full object-cover">
-                        <div class="absolute inset-0 bg-gradient-to-t from-primary/95 via-primary/50 to-transparent"></div>
+                        <div class="absolute inset-0 bg-linear-to-t from-primary/95 via-primary/50 to-transparent"></div>
                         <div class="absolute bottom-4 left-6">
                             <span class="inline-block bg-secondary text-white text-xs px-4 py-2 rounded-full font-semibold">
                                 Chemical Solutions
@@ -84,7 +84,7 @@
                             Reverse Osmosis 192 m3/day
                         </h3>
                         <p class="mb-4 leading-relaxed flex-1">
-                            Lorem ipsum dolor sit amet, consectetu adipiscing elit, varius tellus. Fusce a eros ullamcorper sapien diam pretium eget erat non magna sit luctus et ultri...
+                            Lorem ipsum dolor sit amet, consectetu adipiscing elit, varius tellus. Fusce a eros ullamcorper sapien diam pretium eget...
                         </p>
                         <div class="inline-flex items-center text-secondary font-semibold gap-2 group mt-auto">
                             Read More 
@@ -98,7 +98,7 @@
                         <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=500&h=400&fit=crop" 
                              alt="Project" 
                              class="w-full h-full object-cover">
-                        <div class="absolute inset-0 bg-gradient-to-t from-primary/95 via-primary/50 to-transparent"></div>
+                        <div class="absolute inset-0 bg-linear-to-t from-primary/95 via-primary/50 to-transparent"></div>
                         <div class="absolute bottom-4 left-6">
                             <span class="inline-block bg-secondary text-white text-xs px-4 py-2 rounded-full font-semibold">
                                 Surface Treatment
@@ -113,7 +113,7 @@
                             Sewage Treatment Plant FTI 24 m3/day
                         </h3>
                         <p class="mb-4 leading-relaxed flex-1">
-                            Lorem ipsum dolor sit amet, consectetu adipiscing elit, varius tellus....
+                            Lorem ipsum dolor sit amet, consectetu adipiscing elit, varius tellus. Fusce a eros ullamcorper sapien diam pretium eget...
                         </p>
                         <div class="inline-flex items-center text-secondary font-semibold gap-2 group mt-auto">
                             Read More 
@@ -122,12 +122,12 @@
                     </div>
                 </a>
 
-                <a href="{{ route('project.show') }}" class="card project-card rounded-3xl shadow-2xl overflow-hidden border border-gray-100 flex flex-col fade-in-up" data-delay="0">
+                <a href="{{ route('project.show', 1) }}" class="card project-card rounded-3xl shadow-2xl overflow-hidden border border-gray-100 flex flex-col fade-in-up" data-delay="0">
                     <div class="relative h-52 overflow-hidden">
                         <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=500&h=400&fit=crop" 
                              alt="Project" 
                              class="w-full h-full object-cover">
-                        <div class="absolute inset-0 bg-gradient-to-t from-primary/95 via-primary/50 to-transparent"></div>
+                        <div class="absolute inset-0 bg-linear-to-t from-primary/95 via-primary/50 to-transparent"></div>
                         <div class="absolute bottom-4 left-6">
                             <span class="inline-block bg-secondary text-white text-xs px-4 py-2 rounded-full font-semibold">
                                 Water & Waste Water Treatment (EPC)
@@ -142,7 +142,7 @@
                             Reverse Osmosis 50 m3/hour
                         </h3>
                         <p class="mb-4 leading-relaxed flex-1">
-                            Lorem ipsum dolor sit amet, consectetu adipiscing elit, varius tellus. Fusce a eros ullamcorper sapien diam pretium eget erat non magna sit luctus et ultri...
+                            Lorem ipsum dolor sit amet, consectetu adipiscing elit, varius tellus. Fusce a eros ullamcorper sapien diam pretium eget...
                         </p>
                         <div class="inline-flex items-center text-secondary font-semibold gap-2 group mt-auto">
                             Read More 
@@ -156,7 +156,7 @@
                         <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=500&h=400&fit=crop" 
                              alt="Project" 
                              class="w-full h-full object-cover">
-                        <div class="absolute inset-0 bg-gradient-to-t from-primary/95 via-primary/50 to-transparent"></div>
+                        <div class="absolute inset-0 bg-linear-to-t from-primary/95 via-primary/50 to-transparent"></div>
                         <div class="absolute bottom-4 left-6">
                             <span class="inline-block bg-secondary text-white text-xs px-4 py-2 rounded-full font-semibold">
                                 Chemical Solutions
@@ -171,7 +171,7 @@
                             Reverse Osmosis 192 m3/day
                         </h3>
                         <p class="mb-4 leading-relaxed flex-1">
-                            Lorem ipsum dolor sit amet, consectetu adipiscing elit, varius tellus. Fusce a eros ullamcorper sapien diam pretium eget erat non magna sit luctus et ultri...
+                            Lorem ipsum dolor sit amet, consectetu adipiscing elit, varius tellus. Fusce a eros ullamcorper sapien diam pretium eget...
                         </p>
                         <div class="inline-flex items-center text-secondary font-semibold gap-2 group mt-auto">
                             Read More 
@@ -185,7 +185,7 @@
                         <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=500&h=400&fit=crop" 
                              alt="Project" 
                              class="w-full h-full object-cover">
-                        <div class="absolute inset-0 bg-gradient-to-t from-primary/95 via-primary/50 to-transparent"></div>
+                        <div class="absolute inset-0 bg-linear-to-t from-primary/95 via-primary/50 to-transparent"></div>
                         <div class="absolute bottom-4 left-6">
                             <span class="inline-block bg-secondary text-white text-xs px-4 py-2 rounded-full font-semibold">
                                 Surface Treatment
@@ -200,7 +200,7 @@
                             Sewage Treatment Plant FTI 24 m3/day
                         </h3>
                         <p class="mb-4 leading-relaxed flex-1">
-                            Lorem ipsum dolor sit amet, consectetu adipiscing elit, varius tellus....
+                            Lorem ipsum dolor sit amet, consectetu adipiscing elit, varius tellus. Fusce a eros ullamcorper sapien diam pretium eget...
                         </p>
                         <div class="inline-flex items-center text-secondary font-semibold gap-2 group mt-auto">
                             Read More 
@@ -209,12 +209,12 @@
                     </div>
                 </a>
 
-                <a href="{{ route('project.show') }}" class="card project-card rounded-3xl shadow-2xl overflow-hidden border border-gray-100 flex flex-col fade-in-up" data-delay="0">
+                <a href="{{ route('project.show', 1) }}" class="card project-card rounded-3xl shadow-2xl overflow-hidden border border-gray-100 flex flex-col fade-in-up" data-delay="0">
                     <div class="relative h-52 overflow-hidden">
                         <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=500&h=400&fit=crop" 
                              alt="Project" 
                              class="w-full h-full object-cover">
-                        <div class="absolute inset-0 bg-gradient-to-t from-primary/95 via-primary/50 to-transparent"></div>
+                        <div class="absolute inset-0 bg-linear-to-t from-primary/95 via-primary/50 to-transparent"></div>
                         <div class="absolute bottom-4 left-6">
                             <span class="inline-block bg-secondary text-white text-xs px-4 py-2 rounded-full font-semibold">
                                 Water & Waste Water Treatment (EPC)
@@ -229,7 +229,7 @@
                             Reverse Osmosis 50 m3/hour
                         </h3>
                         <p class="mb-4 leading-relaxed flex-1">
-                            Lorem ipsum dolor sit amet, consectetu adipiscing elit, varius tellus. Fusce a eros ullamcorper sapien diam pretium eget erat non magna sit luctus et ultri...
+                            Lorem ipsum dolor sit amet, consectetu adipiscing elit, varius tellus. Fusce a eros ullamcorper sapien diam pretium eget...
                         </p>
                         <div class="inline-flex items-center text-secondary font-semibold gap-2 group mt-auto">
                             Read More 
@@ -243,7 +243,7 @@
                         <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=500&h=400&fit=crop" 
                              alt="Project" 
                              class="w-full h-full object-cover">
-                        <div class="absolute inset-0 bg-gradient-to-t from-primary/95 via-primary/50 to-transparent"></div>
+                        <div class="absolute inset-0 bg-linear-to-t from-primary/95 via-primary/50 to-transparent"></div>
                         <div class="absolute bottom-4 left-6">
                             <span class="inline-block bg-secondary text-white text-xs px-4 py-2 rounded-full font-semibold">
                                 Chemical Solutions
@@ -258,7 +258,7 @@
                             Reverse Osmosis 192 m3/day
                         </h3>
                         <p class="mb-4 leading-relaxed flex-1">
-                            Lorem ipsum dolor sit amet, consectetu adipiscing elit, varius tellus. Fusce a eros ullamcorper sapien diam pretium eget erat non magna sit luctus et ultri...
+                            Lorem ipsum dolor sit amet, consectetu adipiscing elit, varius tellus. Fusce a eros ullamcorper sapien diam pretium eget...
                         </p>
                         <div class="inline-flex items-center text-secondary font-semibold gap-2 group mt-auto">
                             Read More 
@@ -272,7 +272,7 @@
                         <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=500&h=400&fit=crop" 
                              alt="Project" 
                              class="w-full h-full object-cover">
-                        <div class="absolute inset-0 bg-gradient-to-t from-primary/95 via-primary/50 to-transparent"></div>
+                        <div class="absolute inset-0 bg-linear-to-t from-primary/95 via-primary/50 to-transparent"></div>
                         <div class="absolute bottom-4 left-6">
                             <span class="inline-block bg-secondary text-white text-xs px-4 py-2 rounded-full font-semibold">
                                 Surface Treatment
@@ -287,7 +287,7 @@
                             Sewage Treatment Plant FTI 24 m3/day
                         </h3>
                         <p class="mb-4 leading-relaxed flex-1">
-                            Lorem ipsum dolor sit amet, consectetu adipiscing elit, varius tellus....
+                            Lorem ipsum dolor sit amet, consectetu adipiscing elit, varius tellus. Fusce a eros ullamcorper sapien diam pretium eget...
                         </p>
                         <div class="inline-flex items-center text-secondary font-semibold gap-2 group mt-auto">
                             Read More 
@@ -314,29 +314,29 @@
                     </p>
                     <ul class="space-y-4">
                         <div class="flex items-start gap-4">
-                            <div class="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <div class="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center shrink-0">
                                 <i class="fas fa-chart-line text-secondary text-xl"></i>
                             </div>
                             <div>
-                                <p class="font-bold !text-primary mb-1">Analysis & Planning</p>
+                                <p class="font-bold text-primary! mb-1">Analysis & Planning</p>
                                 <p>Comprehensive project assessment and strategic planning</p>
                             </div>
                         </div>
                         <div class="flex items-start gap-4">
-                            <div class="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <div class="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center shrink-0">
                                 <i class="fas fa-drafting-compass text-secondary text-xl"></i>
                             </div>
                             <div>
-                                <p class="font-bold !text-primary mb-1">Design & Engineering</p>
+                                <p class="font-bold text-primary! mb-1">Design & Engineering</p>
                                 <p>Innovative solutions tailored to your requirements</p>
                             </div>
                         </div>
                         <div class="flex items-start gap-4">
-                            <div class="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <div class="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center shrink-0">
                                 <i class="fas fa-tasks text-secondary text-xl"></i>
                             </div>
                             <div>
-                                <p class="font-bold !text-primary mb-1">Supervision & Quality Control</p>
+                                <p class="font-bold text-primary! mb-1">Supervision & Quality Control</p>
                                 <p>Rigorous oversight ensuring excellence at every stage</p>
                             </div>
                         </div>
@@ -365,7 +365,7 @@
                     Our team of experts is ready to help you achieve your operational goals
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="{{ route('contact') }}" class="btn-primary text-white text-lg rounded-lg font-semibold inline-flex items-center justify-center px-12 py-5">
+                    <a href="{{ route('contact') }}" class="btn-primary text-lg rounded-lg font-semibold inline-flex items-center justify-center px-12 py-5">
                         Get In Touch
                     </a>
                 </div>
