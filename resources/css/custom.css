@@ -161,11 +161,13 @@ nav.scrolled .mobile-menu-icon {
 }
 
 /* Highlight bar kiri */
-.dropdown-item {
+.dropdown-item,
+.service-item {
     position: relative;
 }
 
-.dropdown-item::before {
+.dropdown-item::before,
+.service-item::before {
     content: '';
     position: absolute;
     left: 0;
@@ -177,7 +179,13 @@ nav.scrolled .mobile-menu-icon {
     border-radius: 0 3px 3px 0;
 }
 
-.dropdown-item:hover::before {
+.dropdown-item:hover::before,
+.service-item:hover::before {
+    height: 100%;
+}
+
+.dropdown-item.active::before,
+.service-item.active::before {
     height: 100%;
 }
 

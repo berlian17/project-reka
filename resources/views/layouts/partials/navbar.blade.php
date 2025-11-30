@@ -6,7 +6,7 @@
                 <img src="{{ asset('images/REKA-INTERNATIONAL-SERVICES_LOGO-2.png') }}" alt="Reka International Services"
                     data-light="{{ asset('images/REKA-INTERNATIONAL-SERVICES_LOGO-1.png') }}"
                     data-dark="{{ asset('images/REKA-INTERNATIONAL-SERVICES_LOGO-2.png') }}"
-                    class="h-8 w-auto" id="nav-logo" 
+                    class="h-8 w-auto" id="nav-logo"
                 />
             </a>
             
@@ -21,14 +21,14 @@
                 
                 {{-- Services Dropdown --}}
                 <div class="dropdown-container relative group">
-                    <button class="nav-link dropdown-toggle flex items-center gap-1 px-4 py-2 transition hover:text-secondary {{ request()->routeIs('services*') ? 'text-secondary active' : '' }}">
+                    <button class="nav-link dropdown-toggle flex items-center gap-1 px-4 py-2 transition hover:text-secondary {{ request()->routeIs('service*') ? 'text-secondary! active' : '' }}">
                         Services
                         <i class="fas fa-chevron-down text-xs transition-transform group-hover:rotate-180"></i>
                     </button>
                     
                     <div class="dropdown-menu absolute left-0 top-full w-80 bg-white rounded-2xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
-                        <div class="p-4">                      
-                            <a href="#" class="dropdown-item flex items-start gap-3 p-3 rounded-xl hover:bg-gray-50 transition group/item">
+                        <div class="p-4">
+                            <a href="{{ route('service.show', 'Chemical-Solutions') }}" class="dropdown-item flex items-start gap-3 p-3 rounded-xl hover:bg-gray-50 transition group/item {{ request()->slug === 'Chemical-Solutions' ? 'text-secondary bg-gray-50 active' : '' }}">
                                 <div class="text-primary font-semibold text-sm group-hover/item:text-secondary transition">
                                     Chemical Solutions
                                 </div>
@@ -90,7 +90,7 @@
             <div class="space-y-1">
                 <a href="{{ route('home') }}" class="block px-4 py-3 hover:bg-white/10 rounded-lg transition {{ request()->routeIs('home') ? 'bg-white/10 text-secondary' : '' }}">
                     Home
-                </a>                
+                </a>
                 <a href="{{ route('about') }}" class="block px-4 py-3 hover:bg-white/10 rounded-lg transition {{ request()->routeIs('about') ? 'bg-white/10 text-secondary' : '' }}">
                     about
                 </a>
@@ -102,7 +102,7 @@
                         <i class="fas fa-chevron-down text-sm transition-transform"></i>
                     </button>
                     <div class="mobile-dropdown-content pl-4 mt-1 space-y-1">
-                        <a href="#chemical" class="block px-4 py-2 text-sm hover:bg-white/10 rounded-lg transition">
+                        <a href="{{ route('service.show', 'Chemical-Solutions') }}" class="block px-4 py-2 text-sm hover:bg-white/10 rounded-lg transition">
                             Chemical Solutions
                         </a>
                         <a href="#" class="block px-4 py-2 text-sm hover:bg-white/10 rounded-lg transition">

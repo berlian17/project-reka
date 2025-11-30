@@ -31,7 +31,7 @@
                 <div class="w-[15%] h-1 bg-secondary mb-6"></div>
                 <ul class="space-y-3">
                     <li>
-                        <a href="#" class="hover:text-secondary transition flex items-center gap-2 group">
+                        <a href="{{ route('service.show', 'Chemical-Solutions') }}" class="hover:text-secondary transition flex items-center gap-2 group">
                             <i class="fas fa-chevron-right text-xs transition-transform group-hover:translate-x-1"></i>
                             Chemical Solutions
                         </a>

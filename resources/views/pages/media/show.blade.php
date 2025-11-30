@@ -36,8 +36,8 @@
                 </div>
 
                 <div class="relative rounded-3xl shadow-2xl overflow-hidden mb-8 fade-in-up" data-delay="0">
-                    <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=1200&h=600&fit=crop" 
-                         alt="Media banner" 
+                    <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=1200&h=600&fit=crop"
+                         alt="Media banner"
                          class="w-full h-[450px] object-cover">
                 </div>
             </div>
@@ -64,7 +64,7 @@
                                 Our commitment to environmental sustainability has been recognized by industry leaders. This award represents years of dedication to implementing green technologies and sustainable practices across all our operations. We believe that protecting the environment is not just a responsibility, but an opportunity to innovate and lead.
                             </p>
 
-                            <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=1000&h=600&fit=crop"  alt="Media image">
+                            <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=1000&h=600&fit=crop"  alt="Media img">
 
                             <h3>Key Achievements</h3>
                             <ul class="list-disc">
@@ -97,7 +97,7 @@
                                 <li>Training programs for the next generation of environmental engineers</li>
                             </ol>
 
-                            <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=1000&h=600&fit=crop" alt="Media image">
+                            <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=1000&h=600&fit=crop" alt="Media img">
 
                             <h3>Industry Impact</h3>
                             <p>
@@ -130,8 +130,8 @@
                             <a href="#" class="block group">
                                 <div class="flex gap-4">
                                     <div class="w-20 h-20 rounded-lg overflow-hidden shrink-0">
-                                        <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=200&h=200&fit=crop" 
-                                            alt="Recent" 
+                                        <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=200&h=200&fit=crop"
+                                            alt="Recent"
                                             class="w-full h-full object-cover group-hover:scale-110 transition">
                                     </div>
                                     <div>
@@ -149,8 +149,8 @@
                             <a href="#" class="block group">
                                 <div class="flex gap-4">
                                     <div class="w-20 h-20 rounded-lg overflow-hidden shrink-0">
-                                        <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=200&h=200&fit=crop" 
-                                            alt="Recent" 
+                                        <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=200&h=200&fit=crop"
+                                            alt="Recent"
                                             class="w-full h-full object-cover group-hover:scale-110 transition">
                                     </div>
                                     <div>
@@ -168,8 +168,8 @@
                             <a href="#" class="block group">
                                 <div class="flex gap-4">
                                     <div class="w-20 h-20 rounded-lg overflow-hidden shrink-0">
-                                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=200&h=200&fit=crop" 
-                                            alt="Recent" 
+                                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=200&h=200&fit=crop"
+                                            alt="Recent"
                                             class="w-full h-full object-cover group-hover:scale-110 transition">
                                     </div>
                                     <div>
@@ -187,8 +187,8 @@
                             <a href="#" class="block group">
                                 <div class="flex gap-4">
                                     <div class="w-20 h-20 rounded-lg overflow-hidden shrink-0">
-                                        <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=200&h=200&fit=crop" 
-                                            alt="Recent" 
+                                        <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=200&h=200&fit=crop"
+                                            alt="Recent"
                                             class="w-full h-full object-cover group-hover:scale-110 transition">
                                     </div>
                                     <div>
@@ -206,8 +206,8 @@
                             <a href="#" class="block group">
                                 <div class="flex gap-4">
                                     <div class="w-20 h-20 rounded-lg overflow-hidden shrink-0">
-                                        <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=200&h=200&fit=crop" 
-                                            alt="Recent" 
+                                        <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=200&h=200&fit=crop"
+                                            alt="Recent"
                                             class="w-full h-full object-cover group-hover:scale-110 transition">
                                     </div>
                                     <div>

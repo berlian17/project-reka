@@ -12,15 +12,15 @@ Route::get('/contact', [PageController::class, 'contact'])->name('contact');
 
 Route::prefix('projects')->name('project.')->group(function () {
     Route::get('/', [ProjectController::class, 'index'])->name('index');
-    Route::get('/{id}/detail', [ProjectController::class, 'show'])->name('show');
+    Route::get('/{slug}', [ProjectController::class, 'show'])->name('show');
 });
 
 Route::prefix('services')->name('service.')->group(function () {
     Route::get('/', [ServiceController::class, 'index'])->name('index');
-    Route::get('/{id}/detail', [ServiceController::class, 'show'])->name('show');
+    Route::get('/{slug}', [ServiceController::class, 'show'])->name('show');
 });
 
 Route::prefix('media')->name('media.')->group(function () {
     Route::get('/', [MediaController::class, 'index'])->name('index');
-    Route::get('/{id}/detail', [MediaController::class, 'show'])->name('show');
+    Route::get('/{slug}', [MediaController::class, 'show'])->name('show');
 });

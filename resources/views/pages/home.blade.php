@@ -48,7 +48,7 @@
                 </div>
             </div>
             
-            <div class="hero-slide absolute inset-0 opacity-0 transition-opacity duration-700 flex items-center justify-center text-center text-white" id="hero-slide-2">
+            <div class="hero-slide absolute inset-0 opacity-0 transition-opacity duration-700 flex items-center justify-center text-center text-white" id="hero-slide-3">
                 <div class="z-10 container mx-auto px-4 lg:px-8">
                     <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
                         Sustainable Future
@@ -145,7 +145,7 @@
                 <div class="order-1 lg:order-2 mt-auto fade-in-up" data-delay="300">
                     <div class="relative">
                         <div class="absolute -top-4 -left-4 w-full h-full bg-secondary/10 rounded-2xl"></div>
-                        <img src="" alt="about us" 
+                        <img src="" alt="about us"
                             class="relative w-full h-[450px] object-cover rounded-2xl shadow-2xl">
                     </div>
                 </div>
@@ -167,7 +167,7 @@
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 max-w-6xl mx-auto fade-in-up" data-delay="0">
-                <a href="#" class="card p-8 rounded-3xl text-center transform hover:scale-105 shadow-2xl border border-gray-100 flex flex-col items-center">
+                <a href="{{ route('service.show', 'Chemical-Solutions') }}" class="card p-8 rounded-3xl text-center transform hover:scale-105 shadow-2xl border border-gray-100 flex flex-col items-center">
                     <div class="bg-primary w-28 h-28 icon-circle rounded-full flex items-center justify-center mb-8">
                         <i class="fa-solid fa-flask text-white text-5xl"></i>
                     </div>
@@ -178,7 +178,7 @@
                         High-quality chemical solutions specifically formulated for industrial water and wastewater treatment applications.
                     </p>
                     <div class="inline-flex items-center text-secondary font-semibold gap-2 group mt-auto">
-                        Learn More 
+                        Learn More
                         <i class="fas fa-arrow-right transition-transform group-hover:translate-x-1"></i>
                     </div>
                 </a>
@@ -194,7 +194,7 @@
                         Expert mechanical, piping, and technical services delivering reliable solutions for various industrial requirements.
                     </p>
                     <div class="inline-flex items-center text-secondary font-semibold gap-2 group mt-auto">
-                        Learn More 
+                        Learn More
                         <i class="fas fa-arrow-right transition-transform group-hover:translate-x-1"></i>
                     </div>
                 </a>
@@ -210,14 +210,14 @@
                         Inspection of material and weld quality without damaging the tested part.
                     </p>
                     <div class="inline-flex items-center text-secondary font-semibold gap-2 group mt-auto">
-                        Learn More 
+                        Learn More
                         <i class="fas fa-arrow-right transition-transform group-hover:translate-x-1"></i>
                     </div>
                 </a>
             </div>
 
             <div class="flex flex-col sm:flex-row justify-center fade-in-up" data-delay="0">
-                <a href="#" class="btn-primary rounded-lg font-semibold inline-flex items-center justify-center">
+                <a href="{{ route('service.index') }}" class="btn-primary rounded-lg font-semibold inline-flex items-center justify-center">
                     View All Services
                 </a>
             </div>
@@ -326,46 +326,56 @@
                 </p>
             </div>
 
-            <div class="carousel-container relative overflow-hidden max-w-6xl mx-auto fade-in-up" data-delay="0">
-                <div class="flex animate-scroll">
-                    <div class="flex items-center justify-center shrink-0 px-4 w-64">
-                        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-32 flex items-center justify-center">
-                            <img src="#" alt="client logo" class="max-w-full max-h-full object-contain grayscale hover:grayscale-0 transition-all duration-300">
+            <div class="carousel-container fade-in-up" data-delay="0">
+                <div class="carousel-track" id="carouselTrack">
+                    <div class="carousel-item">
+                        <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-30 flex items-center justify-center">
+                            <img src="{{ asset('images/clients/client-1.webp') }}" alt="client logo" class="max-w-full max-h-full object-contain grayscale hover:grayscale-0 transition-all duration-300">
                         </div>
                     </div>
-                    <div class="flex items-center justify-center shrink-0 px-4 w-64">
-                        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-32 flex items-center justify-center">
-                            <img src="#" alt="client logo" class="max-w-full max-h-full object-contain grayscale hover:grayscale-0 transition-all duration-300">
+                    <div class="carousel-item">
+                        <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-30 flex items-center justify-center">
+                            <img src="{{ asset('images/clients/client-2.webp') }}" alt="client logo" class="max-w-full max-h-full object-contain grayscale hover:grayscale-0 transition-all duration-300">
                         </div>
                     </div>
-                    <div class="flex items-center justify-center shrink-0 px-4 w-64">
-                        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-32 flex items-center justify-center">
-                            <img src="#" alt="client logo" class="max-w-full max-h-full object-contain grayscale hover:grayscale-0 transition-all duration-300">
+                    <div class="carousel-item">
+                        <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-30 flex items-center justify-center">
+                            <img src="{{ asset('images/clients/client-3.webp') }}" alt="client logo" class="max-w-full max-h-full object-contain grayscale hover:grayscale-0 transition-all duration-300">
                         </div>
                     </div>
-                    <div class="flex items-center justify-center shrink-0 px-4 w-64">
-                        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-32 flex items-center justify-center">
-                            <img src="#" alt="client logo" class="max-w-full max-h-full object-contain grayscale hover:grayscale-0 transition-all duration-300">
+                    <div class="carousel-item">
+                        <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-30 flex items-center justify-center">
+                            <img src="{{ asset('images/clients/client-4.webp') }}" alt="client logo" class="max-w-full max-h-full object-contain grayscale hover:grayscale-0 transition-all duration-300">
                         </div>
                     </div>
-                    <div class="flex items-center justify-center shrink-0 px-4 w-64">
-                        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-32 flex items-center justify-center">
-                            <img src="#" alt="client logo" class="max-w-full max-h-full object-contain grayscale hover:grayscale-0 transition-all duration-300">
+                    <div class="carousel-item">
+                        <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-30 flex items-center justify-center">
+                            <img src="{{ asset('images/clients/client-5.webp') }}" alt="client logo" class="max-w-full max-h-full object-contain grayscale hover:grayscale-0 transition-all duration-300">
                         </div>
                     </div>
-                    <div class="flex items-center justify-center shrink-0 px-4 w-64">
-                        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-32 flex items-center justify-center">
-                            <img src="#" alt="client logo" class="max-w-full max-h-full object-contain grayscale hover:grayscale-0 transition-all duration-300">
+                    <div class="carousel-item">
+                        <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-30 flex items-center justify-center">
+                            <img src="{{ asset('images/clients/client-6.webp') }}" alt="client logo" class="max-w-full max-h-full object-contain grayscale hover:grayscale-0 transition-all duration-300">
                         </div>
                     </div>
-                    <div class="flex items-center justify-center shrink-0 px-4 w-64">
-                        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-32 flex items-center justify-center">
-                            <img src="#" alt="client logo" class="max-w-full max-h-full object-contain grayscale hover:grayscale-0 transition-all duration-300">
+                    <div class="carousel-item">
+                        <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-30 flex items-center justify-center">
+                            <img src="{{ asset('images/clients/client-7.webp') }}" alt="client logo" class="max-w-full max-h-full object-contain grayscale hover:grayscale-0 transition-all duration-300">
                         </div>
                     </div>
-                    <div class="flex items-center justify-center shrink-0 px-4 w-64">
-                        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-32 flex items-center justify-center">
-                            <img src="#" alt="client logo" class="max-w-full max-h-full object-contain grayscale hover:grayscale-0 transition-all duration-300">
+                    <div class="carousel-item">
+                        <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-30 flex items-center justify-center">
+                            <img src="{{ asset('images/clients/client-8.webp') }}" alt="client logo" class="max-w-full max-h-full object-contain grayscale hover:grayscale-0 transition-all duration-300">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-30 flex items-center justify-center">
+                            <img src="{{ asset('images/clients/client-9.webp') }}" alt="client logo" class="max-w-full max-h-full object-contain grayscale hover:grayscale-0 transition-all duration-300">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 w-full h-30 flex items-center justify-center">
+                            <img src="{{ asset('images/clients/client-10.webp') }}" alt="client logo" class="max-w-full max-h-full object-contain grayscale hover:grayscale-0 transition-all duration-300">
                         </div>
                     </div>
                 </div>
@@ -387,10 +397,10 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 max-w-6xl mx-auto fade-in-up" data-delay="0">
-                <a href="{{ route('project.show', 1) }}" class="card project-card rounded-3xl shadow-2xl overflow-hidden border border-gray-100 flex flex-col fade-in-up" data-delay="0">
+                <a href="{{ route('project.show', 'Water-&-Waste-Water-Treatment-(EPC)') }}" class="card project-card rounded-3xl shadow-2xl overflow-hidden border border-gray-100 flex flex-col fade-in-up" data-delay="0">
                     <div class="relative h-52 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=500&h=400&fit=crop" 
-                             alt="Project" 
+                        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=500&h=400&fit=crop"
+                             alt="Project"
                              class="w-full h-full object-cover">
                         <div class="absolute inset-0 bg-linear-to-t from-primary/95 via-primary/50 to-transparent"></div>
                         <div class="absolute bottom-4 left-6">
@@ -410,7 +420,7 @@
                             Lorem ipsum dolor sit amet, consectetu adipiscing elit, varius tellus. Fusce a eros ullamcorper sapien diam pretium eget...
                         </p>
                         <div class="inline-flex items-center text-secondary font-semibold gap-2 group mt-auto">
-                            Read More 
+                            Read More
                             <i class="fas fa-arrow-right transition-transform group-hover:translate-x-1"></i>
                         </div>
                     </div>
@@ -418,8 +428,8 @@
 
                 <a href="#" class="card project-card rounded-3xl shadow-2xl overflow-hidden border border-gray-100 flex flex-col fade-in-up" data-delay="300">
                     <div class="relative h-52 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=500&h=400&fit=crop" 
-                             alt="Project" 
+                        <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=500&h=400&fit=crop"
+                             alt="Project"
                              class="w-full h-full object-cover">
                         <div class="absolute inset-0 bg-linear-to-t from-primary/95 via-primary/50 to-transparent"></div>
                         <div class="absolute bottom-4 left-6">
@@ -439,7 +449,7 @@
                             Lorem ipsum dolor sit amet, consectetu adipiscing elit, varius tellus. Fusce a eros ullamcorper sapien diam pretium eget...
                         </p>
                         <div class="inline-flex items-center text-secondary font-semibold gap-2 group mt-auto">
-                            Read More 
+                            Read More
                             <i class="fas fa-arrow-right transition-transform group-hover:translate-x-1"></i>
                         </div>
                     </div>
@@ -447,8 +457,8 @@
 
                 <a href="#" class="card project-card rounded-3xl shadow-2xl overflow-hidden border border-gray-100 flex flex-col fade-in-up" data-delay="600">
                     <div class="relative h-52 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=500&h=400&fit=crop" 
-                             alt="Project" 
+                        <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=500&h=400&fit=crop"
+                             alt="Project"
                              class="w-full h-full object-cover">
                         <div class="absolute inset-0 bg-linear-to-t from-primary/95 via-primary/50 to-transparent"></div>
                         <div class="absolute bottom-4 left-6">
@@ -468,7 +478,7 @@
                             Lorem ipsum dolor sit amet, consectetu adipiscing elit, varius tellus. Fusce a eros ullamcorper sapien diam pretium eget...
                         </p>
                         <div class="inline-flex items-center text-secondary font-semibold gap-2 group mt-auto">
-                            Read More 
+                            Read More
                             <i class="fas fa-arrow-right transition-transform group-hover:translate-x-1"></i>
                         </div>
                     </div>

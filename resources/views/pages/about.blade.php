@@ -45,7 +45,7 @@
                 <div class="order-1 lg:order-2 fade-in-up" data-delay="300">
                     <div class="relative">
                         <div class="absolute -top-4 -right-4 w-full h-full bg-secondary/10 rounded-2xl"></div>
-                        <img src="#" alt="about us" 
+                        <img src="#" alt="about us"
                              class="relative w-full h-[450px] object-cover rounded-2xl shadow-2xl">
                     </div>
                 </div>
@@ -249,8 +249,8 @@
                 <div class="certification-card rounded-3xl shadow-2xl overflow-hidden border border-gray-200 group hover:shadow-3xl fade-in-up" data-delay="0">
                     <div class="relative h-[500px] overflow-hidden bg-white pt-8 px-8">
                         <div class="relative w-full h-full flex items-center justify-center">
-                            <img src="{{ asset('images/certificate/CERT ISO - ISO 14001-2015.webp') }}" 
-                                 alt="ISO certificate" 
+                            <img src="{{ asset('images/certificate/CERT ISO - ISO 14001-2015.webp') }}"
+                                 alt="ISO certificate"
                                  class="max-w-full max-h-full object-contain rounded-lg transform cursor-pointer">
                             <div class="absolute inset-0 bg-linear-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-lg"></div>
 
@@ -279,8 +279,8 @@
                 <div class="certification-card rounded-3xl shadow-2xl overflow-hidden border border-gray-200 group hover:shadow-3xl fade-in-up" data-delay="0">
                     <div class="relative h-[500px] overflow-hidden bg-white pt-8 px-8">
                         <div class="relative w-full h-full flex items-center justify-center">
-                            <img src="{{ asset('images/certificate/CERT ISO - ISO 9001-2015.webp') }}" 
-                                 alt="ISO certificate" 
+                            <img src="{{ asset('images/certificate/CERT ISO - ISO 9001-2015.webp') }}"
+                                 alt="ISO certificate"
                                  class="max-w-full max-h-full object-contain rounded-lg transform cursor-pointer">
                             <div class="absolute inset-0 bg-linear-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-lg"></div>
 

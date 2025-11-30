@@ -35,7 +35,7 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 max-w-6xl mx-auto">
-                <a href="{{ route('service.show', 1) }}" class="card p-8 rounded-3xl text-center transform hover:scale-105 shadow-2xl border border-gray-100 flex flex-col items-center fade-in-up" data-delay="0">
+                <a href="{{ route('service.show', 'Chemical-Solutions') }}" class="card p-8 rounded-3xl text-center transform hover:scale-105 shadow-2xl border border-gray-100 flex flex-col items-center fade-in-up" data-delay="0">
                     <div class="bg-primary w-28 h-28 icon-circle rounded-full flex items-center justify-center mb-8">
                         <i class="fa-solid fa-flask text-white text-5xl"></i>
                     </div>
@@ -46,7 +46,7 @@
                         High-quality chemical solutions specifically formulated for industrial water and wastewater treatment applications.
                     </p>
                     <div class="inline-flex items-center text-secondary font-semibold gap-2 group mt-auto">
-                        Learn More 
+                        Learn More
                         <i class="fas fa-arrow-right transition-transform group-hover:translate-x-1"></i>
                     </div>
                 </a>
@@ -62,7 +62,7 @@
                         Expert mechanical, piping, and technical services delivering reliable solutions for various industrial requirements.
                     </p>
                     <div class="inline-flex items-center text-secondary font-semibold gap-2 group mt-auto">
-                        Learn More 
+                        Learn More
                         <i class="fas fa-arrow-right transition-transform group-hover:translate-x-1"></i>
                     </div>
                 </a>
@@ -78,103 +78,55 @@
                         Inspection of material and weld quality without damaging the tested part.
                     </p>
                     <div class="inline-flex items-center text-secondary font-semibold gap-2 group mt-auto">
-                        Learn More 
+                        Learn More
                         <i class="fas fa-arrow-right transition-transform group-hover:translate-x-1"></i>
                     </div>
                 </a>
 
-                <a href="{{ route('service.show', 1) }}" class="card p-8 rounded-3xl text-center transform hover:scale-105 shadow-2xl border border-gray-100 flex flex-col items-center fade-in-up" data-delay="0">
+                <a href="#" class="card p-8 rounded-3xl text-center transform hover:scale-105 shadow-2xl border border-gray-100 flex flex-col items-center fade-in-up" data-delay="0">
                     <div class="bg-primary w-28 h-28 icon-circle rounded-full flex items-center justify-center mb-8">
-                        <i class="fa-solid fa-flask text-white text-5xl"></i>
+                        <i class="fa-solid fa-hard-hat text-white text-5xl"></i>
                     </div>
                     <p class="text-primary! text-xl font-semibold mb-2">
-                        Chemical Solutions
+                        Steel Construction
                     </p>
                     <p class="mb-4 leading-relaxed">
-                        High-quality chemical solutions specifically formulated for industrial water and wastewater treatment applications.
+                        Fabrication and installation of steel structures and pipelines for industrial applications.
                     </p>
                     <div class="inline-flex items-center text-secondary font-semibold gap-2 group mt-auto">
-                        Learn More 
+                        Learn More
                         <i class="fas fa-arrow-right transition-transform group-hover:translate-x-1"></i>
                     </div>
                 </a>
 
                 <a href="#" class="card p-8 rounded-3xl text-center transform hover:scale-105 shadow-2xl border border-gray-100 flex flex-col items-center fade-in-up" data-delay="300">
                     <div class="bg-primary w-28 h-28 icon-circle rounded-full flex items-center justify-center mb-8">
-                        <i class="fa-solid fa-wrench text-white text-5xl"></i>
+                        <i class="fa-solid fa-cog text-white text-5xl"></i>
                     </div>
                     <p class="text-primary! text-xl font-semibold mb-2">
-                        MPS (Welder, Mechanic, Technician)
+                        Surface Treatment
                     </p>
                     <p class="mb-4 leading-relaxed">
-                        Expert mechanical, piping, and technical services delivering reliable solutions for various industrial requirements.
+                       Metal finishing services such as plating, coating, and black oxide for corrosion protection.
                     </p>
                     <div class="inline-flex items-center text-secondary font-semibold gap-2 group mt-auto">
-                        Learn More 
+                        Learn More
                         <i class="fas fa-arrow-right transition-transform group-hover:translate-x-1"></i>
                     </div>
                 </a>
 
                 <a href="#" class="card p-8 rounded-3xl text-center transform hover:scale-105 shadow-2xl border border-gray-100 flex flex-col items-center fade-in-up" data-delay="600">
                     <div class="bg-primary w-28 h-28 icon-circle rounded-full flex items-center justify-center mb-8">
-                        <i class="fa-solid fa-microscope text-white text-5xl"></i>
+                        <i class="fa-solid fa-water text-white text-5xl"></i>
                     </div>
                     <p class="text-primary! text-xl font-semibold mb-2">
-                        Non-Destructive Test (NDT)
+                       Water & Waste Water Treatment (EPC)
                     </p>
                     <p class="mb-4 leading-relaxed">
-                        Inspection of material and weld quality without damaging the tested part.
+                        Design and construction of efficient water and wastewater treatment systems for industrial facilities.
                     </p>
                     <div class="inline-flex items-center text-secondary font-semibold gap-2 group mt-auto">
-                        Learn More 
-                        <i class="fas fa-arrow-right transition-transform group-hover:translate-x-1"></i>
-                    </div>
-                </a>
-
-                <a href="{{ route('service.show', 1) }}" class="card p-8 rounded-3xl text-center transform hover:scale-105 shadow-2xl border border-gray-100 flex flex-col items-center fade-in-up" data-delay="0">
-                    <div class="bg-primary w-28 h-28 icon-circle rounded-full flex items-center justify-center mb-8">
-                        <i class="fa-solid fa-flask text-white text-5xl"></i>
-                    </div>
-                    <p class="text-primary! text-xl font-semibold mb-2">
-                        Chemical Solutions
-                    </p>
-                    <p class="mb-4 leading-relaxed">
-                        High-quality chemical solutions specifically formulated for industrial water and wastewater treatment applications.
-                    </p>
-                    <div class="inline-flex items-center text-secondary font-semibold gap-2 group mt-auto">
-                        Learn More 
-                        <i class="fas fa-arrow-right transition-transform group-hover:translate-x-1"></i>
-                    </div>
-                </a>
-
-                <a href="#" class="card p-8 rounded-3xl text-center transform hover:scale-105 shadow-2xl border border-gray-100 flex flex-col items-center fade-in-up" data-delay="300">
-                    <div class="bg-primary w-28 h-28 icon-circle rounded-full flex items-center justify-center mb-8">
-                        <i class="fa-solid fa-wrench text-white text-5xl"></i>
-                    </div>
-                    <p class="text-primary! text-xl font-semibold mb-2">
-                        MPS (Welder, Mechanic, Technician)
-                    </p>
-                    <p class="mb-4 leading-relaxed">
-                        Expert mechanical, piping, and technical services delivering reliable solutions for various industrial requirements.
-                    </p>
-                    <div class="inline-flex items-center text-secondary font-semibold gap-2 group mt-auto">
-                        Learn More 
-                        <i class="fas fa-arrow-right transition-transform group-hover:translate-x-1"></i>
-                    </div>
-                </a>
-
-                <a href="#" class="card p-8 rounded-3xl text-center transform hover:scale-105 shadow-2xl border border-gray-100 flex flex-col items-center fade-in-up" data-delay="600">
-                    <div class="bg-primary w-28 h-28 icon-circle rounded-full flex items-center justify-center mb-8">
-                        <i class="fa-solid fa-microscope text-white text-5xl"></i>
-                    </div>
-                    <p class="text-primary! text-xl font-semibold mb-2">
-                        Non-Destructive Test (NDT)
-                    </p>
-                    <p class="mb-4 leading-relaxed">
-                        Inspection of material and weld quality without damaging the tested part.
-                    </p>
-                    <div class="inline-flex items-center text-secondary font-semibold gap-2 group mt-auto">
-                        Learn More 
+                        Learn More
                         <i class="fas fa-arrow-right transition-transform group-hover:translate-x-1"></i>
                     </div>
                 </a>

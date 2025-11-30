@@ -36,8 +36,8 @@
                 </div>
 
                 <div class="relative rounded-3xl shadow-2xl overflow-hidden mb-8 fade-in-up" data-delay="0">
-                    <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=1200&h=600&fit=crop" 
-                         alt="project image" 
+                    <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=1200&h=600&fit=crop"
+                         alt="project img"
                          class="w-full h-[450px] object-cover">
                 </div>
             </div>
@@ -92,9 +92,9 @@
                         <h2 class="text-3xl font-bold text-primary mb-6">Project Gallery</h2>
                         <div class="grid grid-cols-2 gap-4">
                             <div class="relative h-48 overflow-hidden group">
-                                <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=600&h=400&fit=crop" 
-                                    alt="Gallery" 
-                                    class="w-full h-full object-cover rounded-lg transform cursor-pointer">                                
+                                <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=600&h=400&fit=crop"
+                                    alt="Gallery"
+                                    class="w-full h-full object-cover rounded-lg transform cursor-pointer">
                                 <div class="absolute inset-0 bg-linear-to-t from-primary/80 to-transparent opacity-0 md:group-hover:opacity-100 transition-opacity rounded-lg"></div>
 
                                 {{-- Zoom Icon --}}
@@ -105,9 +105,9 @@
                                 </div>
                             </div>
                             <div class="relative h-48 overflow-hidden group">
-                                <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&h=400&fit=crop" 
-                                    alt="Gallery" 
-                                    class="w-full h-full object-cover rounded-lg transform cursor-pointer">                                
+                                <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&h=400&fit=crop"
+                                    alt="Gallery"
+                                    class="w-full h-full object-cover rounded-lg transform cursor-pointer">
                                 <div class="absolute inset-0 bg-linear-to-t from-primary/80 to-transparent opacity-0 md:group-hover:opacity-100 transition-opacity rounded-lg"></div>
 
                                 {{-- Zoom Icon --}}
@@ -118,9 +118,9 @@
                                 </div>
                             </div>
                             <div class="relative h-48 overflow-hidden group">
-                                <img src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?w=600&h=400&fit=crop" 
-                                    alt="Gallery" 
-                                    class="w-full h-full object-cover rounded-lg transform cursor-pointer">                                
+                                <img src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?w=600&h=400&fit=crop"
+                                    alt="Gallery"
+                                    class="w-full h-full object-cover rounded-lg transform cursor-pointer">
                                 <div class="absolute inset-0 bg-linear-to-t from-primary/80 to-transparent opacity-0 md:group-hover:opacity-100 transition-opacity rounded-lg"></div>
 
                                 {{-- Zoom Icon --}}
@@ -131,9 +131,9 @@
                                 </div>
                             </div>
                             <div class="relative h-48 overflow-hidden group">
-                                <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=600&h=400&fit=crop" 
-                                    alt="Gallery" 
-                                    class="w-full h-full object-cover rounded-lg transform cursor-pointer">                                
+                                <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=600&h=400&fit=crop"
+                                    alt="Gallery"
+                                    class="w-full h-full object-cover rounded-lg transform cursor-pointer">
                                 <div class="absolute inset-0 bg-linear-to-t from-primary/80 to-transparent opacity-0 md:group-hover:opacity-100 transition-opacity rounded-lg"></div>
 
                                 {{-- Zoom Icon --}}
@@ -210,8 +210,8 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 max-w-6xl mx-auto">
                 <a href="{{ route('project.show', 1) }}" class="card project-card rounded-3xl shadow-2xl overflow-hidden border border-gray-100 flex flex-col fade-in-up" data-delay="0">
                     <div class="relative h-52 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=500&h=400&fit=crop" 
-                             alt="Project" 
+                        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=500&h=400&fit=crop"
+                             alt="Project"
                              class="w-full h-full object-cover">
                         <div class="absolute inset-0 bg-linear-to-t from-primary/95 via-primary/50 to-transparent"></div>
                         <div class="absolute bottom-4 left-6">
@@ -231,7 +231,7 @@
                             Lorem ipsum dolor sit amet, consectetu adipiscing elit, varius tellus. Fusce a eros ullamcorper sapien diam pretium eget...
                         </p>
                         <div class="inline-flex items-center text-secondary font-semibold gap-2 group mt-auto">
-                            Read More 
+                            Read More
                             <i class="fas fa-arrow-right transition-transform group-hover:translate-x-1"></i>
                         </div>
                     </div>
@@ -239,8 +239,8 @@
 
                 <a href="#" class="card project-card rounded-3xl shadow-2xl overflow-hidden border border-gray-100 flex flex-col fade-in-up" data-delay="300">
                     <div class="relative h-52 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=500&h=400&fit=crop" 
-                             alt="Project" 
+                        <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=500&h=400&fit=crop"
+                             alt="Project"
                              class="w-full h-full object-cover">
                         <div class="absolute inset-0 bg-linear-to-t from-primary/95 via-primary/50 to-transparent"></div>
                         <div class="absolute bottom-4 left-6">
@@ -260,7 +260,7 @@
                             Lorem ipsum dolor sit amet, consectetu adipiscing elit, varius tellus. Fusce a eros ullamcorper sapien diam pretium eget...
                         </p>
                         <div class="inline-flex items-center text-secondary font-semibold gap-2 group mt-auto">
-                            Read More 
+                            Read More
                             <i class="fas fa-arrow-right transition-transform group-hover:translate-x-1"></i>
                         </div>
                     </div>
@@ -268,8 +268,8 @@
 
                 <a href="#" class="card project-card rounded-3xl shadow-2xl overflow-hidden border border-gray-100 flex flex-col fade-in-up" data-delay="600">
                     <div class="relative h-52 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=500&h=400&fit=crop" 
-                             alt="Project" 
+                        <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=500&h=400&fit=crop"
+                             alt="Project"
                              class="w-full h-full object-cover">
                         <div class="absolute inset-0 bg-linear-to-t from-primary/95 via-primary/50 to-transparent"></div>
                         <div class="absolute bottom-4 left-6">
@@ -289,7 +289,7 @@
                             Lorem ipsum dolor sit amet, consectetu adipiscing elit, varius tellus. Fusce a eros ullamcorper sapien diam pretium eget...
                         </p>
                         <div class="inline-flex items-center text-secondary font-semibold gap-2 group mt-auto">
-                            Read More 
+                            Read More
                             <i class="fas fa-arrow-right transition-transform group-hover:translate-x-1"></i>
                         </div>
                     </div>

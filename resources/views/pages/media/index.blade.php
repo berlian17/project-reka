@@ -27,8 +27,8 @@
             <div class="card latest-media-card max-w-6xl mx-auto rounded-3xl shadow-2xl overflow-hidden border border-gray-100 fade-in-up" data-delay="0">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-0">
                     <div class="relative h-auto overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop" 
-                            alt="Latest News" 
+                        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
+                            alt="Latest News"
                             class="w-full h-full object-cover">
                         <div class="absolute top-6 left-6">
                             <span class="inline-block bg-secondary text-white px-4 py-2 rounded-full font-semibold">
@@ -89,8 +89,8 @@
 
                 <!-- Search -->
                 <div class="relative w-full md:w-auto">
-                    <input 
-                        type="text" 
+                    <input
+                        type="text"
                         id="search-input"
                         placeholder="Search articles..."
                         value="{{ request('search') }}"
@@ -108,8 +108,8 @@
                 <a href="{{ route('media.show', 1) }}" class="card latest-media-card max-w-6xl mx-auto rounded-3xl shadow-2xl overflow-hidden border border-gray-100 fade-in-up" data-delay="0">
                     <div class="grid grid-cols-1 lg:grid-cols-3 gap-0">
                         <div class="relative h-auto overflow-hidden lg:col-span-1">
-                            <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=500&h=400&fit=crop" 
-                                alt="Media" 
+                            <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=500&h=400&fit=crop"
+                                alt="Media"
                                 class="w-full h-full object-cover">
                             <div class="absolute top-6 left-6">
                                 <span class="inline-block bg-secondary text-white text-xs px-4 py-2 rounded-full font-semibold">
@@ -130,7 +130,7 @@
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, varius tellus. Fusce a...
                             </p>
                             <div class="inline-flex items-center text-secondary font-semibold gap-2 group mt-auto">
-                                Read More 
+                                Read More
                                 <i class="fas fa-arrow-right transition-transform group-hover:translate-x-1"></i>
                             </div>
                         </div>
@@ -139,8 +139,8 @@
                 <a href="#" class="card latest-media-card max-w-6xl mx-auto rounded-3xl shadow-2xl overflow-hidden border border-gray-100 fade-in-up" data-delay="0">
                     <div class="grid grid-cols-1 lg:grid-cols-3 gap-0">
                         <div class="relative h-auto overflow-hidden lg:col-span-1">
-                            <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&h=400&fit=crop" 
-                                alt="Media" 
+                            <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&h=400&fit=crop"
+                                alt="Media"
                                 class="w-full h-full object-cover">
                             <div class="absolute top-6 left-6">
                                 <span class="inline-block bg-blue-600 text-white text-xs px-4 py-2 rounded-full font-semibold">
@@ -161,7 +161,7 @@
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, varius tellus. Fusce a...
                             </p>
                             <div class="inline-flex items-center text-secondary font-semibold gap-2 group mt-auto">
-                                Read More 
+                                Read More
                                 <i class="fas fa-arrow-right transition-transform group-hover:translate-x-1"></i>
                             </div>
                         </div>
@@ -170,8 +170,8 @@
                 <a href="#" class="card latest-media-card max-w-6xl mx-auto rounded-3xl shadow-2xl overflow-hidden border border-gray-100 fade-in-up" data-delay="0">
                     <div class="grid grid-cols-1 lg:grid-cols-3 gap-0">
                         <div class="relative h-auto overflow-hidden lg:col-span-1">
-                            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&h=400&fit=crop" 
-                                alt="Media" 
+                            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&h=400&fit=crop"
+                                alt="Media"
                                 class="w-full h-full object-cover">
                             <div class="absolute top-6 left-6">
                                 <span class="inline-block bg-purple-600 text-white text-xs px-4 py-2 rounded-full font-semibold">
@@ -192,7 +192,7 @@
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, varius tellus. Fusce a...
                             </p>
                             <div class="inline-flex items-center text-secondary font-semibold gap-2 group mt-auto">
-                                Read More 
+                                Read More
                                 <i class="fas fa-arrow-right transition-transform group-hover:translate-x-1"></i>
                             </div>
                         </div>
@@ -201,8 +201,8 @@
                 <a href="{{ route('media.show', 1) }}" class="card latest-media-card max-w-6xl mx-auto rounded-3xl shadow-2xl overflow-hidden border border-gray-100 fade-in-up" data-delay="0">
                     <div class="grid grid-cols-1 lg:grid-cols-3 gap-0">
                         <div class="relative h-auto overflow-hidden lg:col-span-1">
-                            <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=500&h=400&fit=crop" 
-                                alt="Media" 
+                            <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=500&h=400&fit=crop"
+                                alt="Media"
                                 class="w-full h-full object-cover">
                             <div class="absolute top-6 left-6">
                                 <span class="inline-block bg-secondary text-white text-xs px-4 py-2 rounded-full font-semibold">
@@ -223,7 +223,7 @@
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, varius tellus. Fusce a...
                             </p>
                             <div class="inline-flex items-center text-secondary font-semibold gap-2 group mt-auto">
-                                Read More 
+                                Read More
                                 <i class="fas fa-arrow-right transition-transform group-hover:translate-x-1"></i>
                             </div>
                         </div>
@@ -232,8 +232,8 @@
                 <a href="#" class="card latest-media-card max-w-6xl mx-auto rounded-3xl shadow-2xl overflow-hidden border border-gray-100 fade-in-up" data-delay="0">
                     <div class="grid grid-cols-1 lg:grid-cols-3 gap-0">
                         <div class="relative h-auto overflow-hidden lg:col-span-1">
-                            <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&h=400&fit=crop" 
-                                alt="Media" 
+                            <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&h=400&fit=crop"
+                                alt="Media"
                                 class="w-full h-full object-cover">
                             <div class="absolute top-6 left-6">
                                 <span class="inline-block bg-blue-600 text-white text-xs px-4 py-2 rounded-full font-semibold">
@@ -254,7 +254,7 @@
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, varius tellus. Fusce a...
                             </p>
                             <div class="inline-flex items-center text-secondary font-semibold gap-2 group mt-auto">
-                                Read More 
+                                Read More
                                 <i class="fas fa-arrow-right transition-transform group-hover:translate-x-1"></i>
                             </div>
                         </div>
@@ -263,8 +263,8 @@
                 <a href="#" class="card latest-media-card max-w-6xl mx-auto rounded-3xl shadow-2xl overflow-hidden border border-gray-100 fade-in-up" data-delay="0">
                     <div class="grid grid-cols-1 lg:grid-cols-3 gap-0">
                         <div class="relative h-auto overflow-hidden lg:col-span-1">
-                            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&h=400&fit=crop" 
-                                alt="Media" 
+                            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&h=400&fit=crop"
+                                alt="Media"
                                 class="w-full h-full object-cover">
                             <div class="absolute top-6 left-6">
                                 <span class="inline-block bg-purple-600 text-white text-xs px-4 py-2 rounded-full font-semibold">
@@ -285,7 +285,7 @@
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, varius tellus. Fusce a...
                             </p>
                             <div class="inline-flex items-center text-secondary font-semibold gap-2 group mt-auto">
-                                Read More 
+                                Read More
                                 <i class="fas fa-arrow-right transition-transform group-hover:translate-x-1"></i>
                             </div>
                         </div>

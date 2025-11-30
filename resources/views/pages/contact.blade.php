@@ -134,7 +134,7 @@
                                     <label class="block font-semibold text-primary mb-2">
                                         Company Name <span class="text-secondary">*</span>
                                     </label>
-                                    <input 
+                                    <input
                                         type="text" name="companyName"
                                         class="form-input w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none"
                                         placeholder="Your Company" required
@@ -147,7 +147,7 @@
                                     <label class="block font-semibold text-primary mb-2">
                                         Email Address <span class="text-secondary">*</span>
                                     </label>
-                                    <input 
+                                    <input
                                         type="email" name="email"
                                         class="form-input w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none"
                                         placeholder="john@company.com" required
@@ -170,7 +170,7 @@
                                 <label class="block font-semibold text-primary mb-2">
                                     Subject <span class="text-secondary">*</span>
                                 </label>
-                                <input 
+                                <input
                                     type="text" name="subject"
                                     class="form-input w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none"
                                     placeholder="Brief description" required
@@ -180,7 +180,7 @@
                                 <label class="block font-semibold text-primary mb-2">
                                     Message <span class="text-secondary">*</span>
                                 </label>
-                                <textarea 
+                                <textarea
                                     name="message" rows="6"
                                     class="form-input w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none resize-none"
                                     placeholder="Tell us more about your requirements..." required
@@ -188,8 +188,8 @@
                             </div>
 
                             {{-- Submit --}}
-                            <button 
-                                type="submit" 
+                            <button
+                                type="submit"
                                 class="btn-primary w-full rounded-lg font-semibold text-lg shadow-2xl hover:shadow-3xl flex items-center justify-center gap-3 group"
                             >
                                 <i class="fas fa-paper-plane text-xl"></i>
@@ -221,13 +221,14 @@
             </div>
 
             <div class="map-container max-w-6xl mx-auto fade-in-up rounded-3xl shadow-2xl" data-delay="0">
-                <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.2087479287744!2d107.00959931476897!3d-6.361089995407474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e699c5e7e9e7e9d%3A0x1a1a1a1a1a1a1a1a!2sJl.%20R.%20Suprapto%20No.505%2C%20Cjengkel%20Setu%2C%20Kabupaten%20Bekasi%2C%20Jawa%20Barat%2017520!5e0!3m2!1sen!2sid!4v1234567890123!5m2!1sen!2sid"
-                    width="100%" 
-                    height="400" 
-                    style="border:0;" 
-                    allowfullscreen="" 
-                    loading="lazy" 
+                <iframe
+                    src="<iframe src=<iframe src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1983.0828802728715!2d106.9919152!3d-6.241873!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698df8b061b851%3A0xb9711644dcdbc1f!2sDJARCO%20REKA%20RASA%20INDONESIA.%20PT!5e0!3m2!1sid!2sid!4v1764398148783!5m2!1sid!2sid'
+                    title="Our Office Location"
+                    width="100%"
+                    height="400"
+                    style="border:0;"
+                    allowfullscreen
+                    loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"
                     class="rounded-3xl"
                 ></iframe>
