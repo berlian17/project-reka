@@ -95,7 +95,9 @@ nav.scrolled .mobile-dropdown-toggle {
 }
 
 nav.scrolled a:hover,
-nav.scrolled a.active {
+nav.scrolled a.active,
+nav.scrolled .mobile-dropdown-toggle:hover,
+nav.scrolled .mobile-dropdown-toggle.active {
     color: #CE2919 !important;
 }
 

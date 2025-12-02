@@ -31,7 +31,7 @@
                         <h3 class="text-2xl font-bold text-primary mb-6">Other Services</h3>
                         <div class="space-y-4">
                             <div class="pb-4 border-b border-gray-300">
-                                <a href="{{ route('service.show', 'Chemical-Solutions') }}" class="service-item flex items-center gap-3 p-4 rounded-xl hover:bg-gray-50 transition group/item {{ request()->slug === 'Chemical-Solutions' ? 'text-secondary bg-gray-50 active' : '' }}">
+                                <a href="{{ route('service.show', 'Chemical-Solutions') }}" class="service-item flex items-center gap-3 p-4 rounded-xl hover:bg-gray-50 transition group/item {{ request()->slug == 'Chemical-Solutions' ? 'bg-gray-100 active' : '' }}">
                                     <i class="fa-solid fa-flask text-secondary"></i>
                                     <span class="font-semibold text-primary">Chemical Solutions</span>
                                 </a>
@@ -52,12 +52,6 @@
                                 <a href="#" class="service-item flex items-center gap-3 p-4 rounded-xl hover:bg-gray-50 transition group/item">
                                     <i class="fas fa-hard-hat text-secondary"></i>
                                     <span class="font-semibold text-primary">Steel Construction</span>
-                                </a>
-                            </div>
-                            <div class="pb-4 border-b border-gray-300">
-                                <a href="#" class="service-item flex items-center gap-3 p-4 rounded-xl hover:bg-gray-50 transition group/item">
-                                    <i class="fas fa-cog text-secondary"></i>
-                                    <span class="font-semibold text-primary">Surface Treatment</span>
                                 </a>
                             </div>
                             <div>

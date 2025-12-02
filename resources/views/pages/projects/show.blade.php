@@ -91,7 +91,7 @@
                     <div class="card rounded-3xl shadow-2xl p-8 md:p-12">
                         <h2 class="text-3xl font-bold text-primary mb-6">Project Gallery</h2>
                         <div class="grid grid-cols-2 gap-4">
-                            <div class="relative h-48 overflow-hidden group">
+                            <div class="project-img relative h-48 overflow-hidden group">
                                 <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=600&h=400&fit=crop"
                                     alt="Gallery"
                                     class="w-full h-full object-cover rounded-lg transform cursor-pointer">
@@ -104,7 +104,7 @@
                                     </button>
                                 </div>
                             </div>
-                            <div class="relative h-48 overflow-hidden group">
+                            <div class="project-img relative h-48 overflow-hidden group">
                                 <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&h=400&fit=crop"
                                     alt="Gallery"
                                     class="w-full h-full object-cover rounded-lg transform cursor-pointer">
@@ -117,7 +117,7 @@
                                     </button>
                                 </div>
                             </div>
-                            <div class="relative h-48 overflow-hidden group">
+                            <div class="project-img relative h-48 overflow-hidden group">
                                 <img src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?w=600&h=400&fit=crop"
                                     alt="Gallery"
                                     class="w-full h-full object-cover rounded-lg transform cursor-pointer">
@@ -130,7 +130,7 @@
                                     </button>
                                 </div>
                             </div>
-                            <div class="relative h-48 overflow-hidden group">
+                            <div class="project-img relative h-48 overflow-hidden group">
                                 <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=600&h=400&fit=crop"
                                     alt="Gallery"
                                     class="w-full h-full object-cover rounded-lg transform cursor-pointer">
@@ -193,6 +193,20 @@
             </div>
         </div>
     </section>
+
+    {{-- Modal Image Viewer --}}
+    <div id="imageModal" class="fixed inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center opacity-0 invisible transition-all duration-300 z-500">
+        <div class="relative max-w-4xl w-full">
+            <button id="closeImageModal"
+                    class="absolute -top-10 right-0 text-white text-4xl hover:text-secondary transition">
+                &times;
+            </button>
+
+            <img id="modalImage"
+                src=""
+                class="w-full max-h-[90vh] object-contain rounded-2xl shadow-xl transition-transform duration-300 scale-95">
+        </div>
+    </div>
 
     {{-- Projects --}}
     <section class="py-38 bg-white">
@@ -317,3 +331,7 @@
         </div>
     </section>
 @endsection
+
+@push('scripts')
+    <script src="{{ asset('js/pages/project.js') }}"></script>
+@endpush

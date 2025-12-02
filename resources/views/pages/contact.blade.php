@@ -51,13 +51,15 @@
                                 <div>
                                     <p class="icon-title">Head Office</p>
                                     <p class="text-sm leading-relaxed">
-                                        Jl. R. Suprapto No. 505 Cijengkol Setu Kabupaten Bekasi, 17520
+                                        Jl. Ciremai Raya No.BA 234, Kayuringin Jaya, Kec. Bekasi Sel., Kota Bks, Jawa Barat 17144
                                     </p>
                                 </div>
                             </div>
                         </div>
 
-                        <a href="tel:021-8355317">
+                        <a href="#" 
+                            onclick="window.open('https://api.whatsapp.com/send?phone=6281291253630&text=Hello,%20I%20would%20like%20to%20inquire%20further%20about%20your%20services.', '_blank'); return false;" 
+                            class="text-sm leading-relaxed">
                             <div class="card info-card rounded-2xl p-6 mb-5 border border-gray-300 hover:border-secondary">
                                 <div class="flex items-start gap-4">
                                     <div class="icon-box w-14 h-14 rounded-xl flex items-center justify-center shrink-0 my-auto">
@@ -66,14 +68,14 @@
                                     <div>
                                         <p class="icon-title">Phone</p>
                                         <p class="text-sm leading-relaxed">
-                                            021-8355317
+                                            +62 812-9125-3630
                                         </p>
                                     </div>
                                 </div>
                             </div>
                         </a>
 
-                        <a href="mailto:marketing@rekaindo.com">
+                        <a href="mailto:tony@rekain.com">
                             <div class="card info-card rounded-2xl p-6 mb-5 border border-gray-300 hover:border-secondary">
                                 <div class="flex items-start gap-4">
                                     <div class="icon-box w-14 h-14 rounded-xl flex items-center justify-center shrink-0 my-auto">
@@ -82,7 +84,7 @@
                                     <div>
                                         <p class="icon-title">Email</p>
                                         <p class="text-sm leading-relaxed">
-                                            marketing@rekaindo.com
+                                            tony@rekain.com
                                         </p>
                                     </div>
                                 </div>
@@ -221,13 +223,11 @@
             </div>
 
             <div class="map-container max-w-6xl mx-auto fade-in-up rounded-3xl shadow-2xl" data-delay="0">
-                <iframe
-                    src="<iframe src=<iframe src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1983.0828802728715!2d106.9919152!3d-6.241873!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698df8b061b851%3A0xb9711644dcdbc1f!2sDJARCO%20REKA%20RASA%20INDONESIA.%20PT!5e0!3m2!1sid!2sid!4v1764398148783!5m2!1sid!2sid'
-                    title="Our Office Location"
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1983.0828802728715!2d106.9919152!3d-6.241873!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698df8b061b851%3A0xb9711644dcdbc1f!2sDJARCO%20REKA%20RASA%20INDONESIA.%20PT!5e0!3m2!1sid!2sid!4v1764665026978!5m2!1sid!2sid" 
                     width="100%"
-                    height="400"
+                    height="450"
                     style="border:0;"
-                    allowfullscreen
+                    allowfullscreen="true"
                     loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"
                     class="rounded-3xl"

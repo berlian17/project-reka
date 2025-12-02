@@ -25,35 +25,29 @@
                         Services
                         <i class="fas fa-chevron-down text-xs transition-transform group-hover:rotate-180"></i>
                     </button>
-                    
                     <div class="dropdown-menu absolute left-0 top-full w-80 bg-white rounded-2xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
                         <div class="p-4">
-                            <a href="{{ route('service.show', 'Chemical-Solutions') }}" class="dropdown-item flex items-start gap-3 p-3 rounded-xl hover:bg-gray-50 transition group/item {{ request()->slug === 'Chemical-Solutions' ? 'text-secondary bg-gray-50 active' : '' }}">
+                            <a href="{{ route('service.show', 'Chemical-Solutions') }}" class="dropdown-item flex items-start gap-3 p-3 rounded-xl hover:bg-gray-100 transition group/item {{ request()->slug === 'Chemical-Solutions' ? 'text-secondary bg-gray-100 active' : '' }}">
                                 <div class="text-primary font-semibold text-sm group-hover/item:text-secondary transition">
                                     Chemical Solutions
                                 </div>
                             </a>
-                            <a href="#" class="dropdown-item flex items-start gap-3 p-3 rounded-xl hover:bg-gray-50 transition group/item">
+                            <a href="#" class="dropdown-item flex items-start gap-3 p-3 rounded-xl hover:bg-gray-100 transition group/item">
                                 <div class="text-primary font-semibold text-sm group-hover/item:text-secondary transition">
                                     MPS (Welder, Mechanic, Technician)
                                 </div>
                             </a>
-                            <a href="#" class="dropdown-item flex items-start gap-3 p-3 rounded-xl hover:bg-gray-50 transition group/item">
+                            <a href="#" class="dropdown-item flex items-start gap-3 p-3 rounded-xl hover:bg-gray-100 transition group/item">
                                 <div class="text-primary font-semibold text-sm group-hover/item:text-secondary transition">
                                     Non-Destructive Test (NDT)
                                 </div>
                             </a>
-                            <a href="#" class="dropdown-item flex items-start gap-3 p-3 rounded-xl hover:bg-gray-50 transition group/item">
+                            <a href="#" class="dropdown-item flex items-start gap-3 p-3 rounded-xl hover:bg-gray-100 transition group/item">
                                 <div class="text-primary font-semibold text-sm group-hover/item:text-secondary transition">
                                     Steel Construction
                                 </div>
                             </a>
-                            <a href="#" class="dropdown-item flex items-start gap-3 p-3 rounded-xl hover:bg-gray-50 transition group/item">
-                                <div class="text-primary font-semibold text-sm group-hover/item:text-secondary transition">
-                                    Surface Treatment
-                                </div>
-                            </a>
-                            <a href="#" class="dropdown-item flex items-start gap-3 p-3 rounded-xl hover:bg-gray-50 transition group/item">
+                            <a href="#" class="dropdown-item flex items-start gap-3 p-3 rounded-xl hover:bg-gray-100 transition group/item">
                                 <div class="text-primary font-semibold text-sm group-hover/item:text-secondary transition">
                                     Water & Waste Water Treatment (EPC)
                                 </div>
@@ -88,16 +82,16 @@
         {{-- Mobile Menu --}}
         <div id="mobile-menu" class="hidden lg:hidden pb-4">
             <div class="space-y-1">
-                <a href="{{ route('home') }}" class="block px-4 py-3 hover:bg-white/10 rounded-lg transition {{ request()->routeIs('home') ? 'bg-white/10 text-secondary' : '' }}">
+                <a href="{{ route('home') }}" class="block px-4 py-3 hover:bg-white/10 rounded-lg transition {{ request()->routeIs('home') ? 'bg-white/10 text-secondary active' : '' }}">
                     Home
                 </a>
-                <a href="{{ route('about') }}" class="block px-4 py-3 hover:bg-white/10 rounded-lg transition {{ request()->routeIs('about') ? 'bg-white/10 text-secondary' : '' }}">
+                <a href="{{ route('about') }}" class="block px-4 py-3 hover:bg-white/10 rounded-lg transition {{ request()->routeIs('about') ? 'bg-white/10 text-secondary active' : '' }}">
                     about
                 </a>
                 
                 {{-- Services Mobile Accordion --}}
                 <div class="mobile-dropdown">
-                    <button class="mobile-dropdown-toggle w-full flex items-center justify-between px-4 py-3 hover:bg-white/10 rounded-lg transition {{ request()->routeIs('services*') ? 'bg-white/10 text-secondary' : '' }}">
+                    <button class="mobile-dropdown-toggle w-full flex items-center justify-between px-4 py-3 hover:bg-white/10 rounded-lg transition {{ request()->routeIs('service*') ? 'bg-white/10 text-secondary active' : '' }}">
                         Services
                         <i class="fas fa-chevron-down text-sm transition-transform"></i>
                     </button>
@@ -115,9 +109,6 @@
                             Steel Construction
                         </a>
                         <a href="#" class="block px-4 py-2 text-sm hover:bg-white/10 rounded-lg transition">
-                            Surface Treatment
-                        </a>
-                        <a href="#" class="block px-4 py-2 text-sm hover:bg-white/10 rounded-lg transition">
                             Water & Waste Water Treatment (EPC)
                         </a>
                         <a href="{{ route('service.index') }}" class="block px-4 py-2 text-sm text-secondary font-semibold hover:bg-white/10 rounded-lg transition">
@@ -126,13 +117,13 @@
                     </div>
                 </div>
                 
-                <a href="{{ route('project.index') }}" class="block px-4 py-3 hover:bg-white/10 rounded-lg transition {{ request()->routeIs('project*') ? 'bg-white/10 text-secondary' : '' }}">
+                <a href="{{ route('project.index') }}" class="block px-4 py-3 hover:bg-white/10 rounded-lg transition {{ request()->routeIs('project*') ? 'bg-white/10 text-secondary active' : '' }}">
                     Projects
                 </a>
-                <a href="{{ route('media.index') }}" class="block px-4 py-3 hover:bg-white/10 rounded-lg transition {{ request()->routeIs('media*') ? 'bg-white/10 text-secondary' : '' }}">
+                <a href="{{ route('media.index') }}" class="block px-4 py-3 hover:bg-white/10 rounded-lg transition {{ request()->routeIs('media*') ? 'bg-white/10 text-secondary active' : '' }}">
                     Media
                 </a>
-                <a href="{{ route('contact') }}" class="block px-4 py-3 hover:bg-white/10 rounded-lg transition {{ request()->routeIs('contact') ? 'bg-white/10 text-secondary' : '' }}">
+                <a href="{{ route('contact') }}" class="block px-4 py-3 hover:bg-white/10 rounded-lg transition {{ request()->routeIs('contact') ? 'bg-white/10 text-secondary active' : '' }}">
                     Contact
                 </a>
             </div>

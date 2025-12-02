@@ -99,22 +99,6 @@
                     </div>
                 </a>
 
-                <a href="#" class="card p-8 rounded-3xl text-center transform hover:scale-105 shadow-2xl border border-gray-100 flex flex-col items-center fade-in-up" data-delay="300">
-                    <div class="bg-primary w-28 h-28 icon-circle rounded-full flex items-center justify-center mb-8">
-                        <i class="fa-solid fa-cog text-white text-5xl"></i>
-                    </div>
-                    <p class="text-primary! text-xl font-semibold mb-2">
-                        Surface Treatment
-                    </p>
-                    <p class="mb-4 leading-relaxed">
-                       Metal finishing services such as plating, coating, and black oxide for corrosion protection.
-                    </p>
-                    <div class="inline-flex items-center text-secondary font-semibold gap-2 group mt-auto">
-                        Learn More
-                        <i class="fas fa-arrow-right transition-transform group-hover:translate-x-1"></i>
-                    </div>
-                </a>
-
                 <a href="#" class="card p-8 rounded-3xl text-center transform hover:scale-105 shadow-2xl border border-gray-100 flex flex-col items-center fade-in-up" data-delay="600">
                     <div class="bg-primary w-28 h-28 icon-circle rounded-full flex items-center justify-center mb-8">
                         <i class="fa-solid fa-water text-white text-5xl"></i>

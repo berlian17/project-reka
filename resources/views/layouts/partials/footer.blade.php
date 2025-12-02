@@ -27,7 +27,7 @@
             </div>
             
             <div class="md:col-span-4">
-                <h3 class="mb-2">Our Services</h3>
+                <h3 class="text-xl font-bold mb-2 leading-tight">Our Services</h3>
                 <div class="w-[15%] h-1 bg-secondary mb-6"></div>
                 <ul class="space-y-3">
                     <li>
@@ -57,12 +57,6 @@
                     <li>
                         <a href="#" class="hover:text-secondary transition flex items-center gap-2 group">
                             <i class="fas fa-chevron-right text-xs transition-transform group-hover:translate-x-1"></i>
-                            Surface Treatment
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="hover:text-secondary transition flex items-center gap-2 group">
-                            <i class="fas fa-chevron-right text-xs transition-transform group-hover:translate-x-1"></i>
                             Water & Waste Water Treatment (EPC)
                         </a>
                     </li>
@@ -70,20 +64,24 @@
             </div>
             
             <div class="md:col-span-3">
-                <h3 class="mb-2">Contact Info</h3>
+                <h3 class="text-xl font-bold mb-2 leading-tight">Contact Info</h3>
                 <div class="w-[15%] h-1 bg-secondary mb-6"></div>
                 <ul class="space-y-4">
                     <li class="flex items-start gap-3">
                         <i class="fas fa-map-marker-alt text-secondary mt-1 shrink-0"></i>
-                        <span class="leading-relaxed">Jl. R. Suprapto No. 505 Cjengkel Setu, Kabupaten Bekasi, 17520</span>
+                        <span class="leading-relaxed">Jl. Ciremai Raya No.BA 234, Kayuringin Jaya, Kec. Bekasi Sel., Kota Bks, Jawa Barat 17144</span>
                     </li>
                     <li class="flex items-center gap-3">
                         <i class="fas fa-phone text-secondary"></i>
-                        <a href="tel:021-8355317" class="hover:text-secondary transition">021-8355317</a>
+                        <a href="#" 
+                            onclick="window.open('https://api.whatsapp.com/send?phone=6281291253630&text=Hello,%20I%20would%20like%20to%20inquire%20further%20about%20your%20services.', '_blank'); return false;" 
+                            class="hover:text-secondary transition">
+                            +62 812-9125-3630
+                        </a>
                     </li>
                     <li class="flex items-center gap-3">
                         <i class="fas fa-envelope text-secondary"></i>
-                        <a href="mailto:marketing@rekaindo.com" class="hover:text-secondary transition">marketing@rekaindo.com</a>
+                        <a href="mailto:tony@rekain.com" class="hover:text-secondary transition">tony@rekain.com</a>
                     </li>
                 </ul>
             </div>

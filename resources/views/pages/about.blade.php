@@ -309,6 +309,20 @@
         </div>
     </section>
 
+    {{-- Modal Image Viewer --}}
+    <div id="imageModal" class="fixed inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center opacity-0 invisible transition-all duration-300 z-500">
+        <div class="relative max-w-4xl w-full">
+            <button id="closeImageModal"
+                    class="absolute -top-10 right-0 text-white text-4xl hover:text-secondary transition">
+                &times;
+            </button>
+
+            <img id="modalImage"
+                src=""
+                class="w-full max-h-[90vh] object-contain rounded-2xl shadow-xl transition-transform duration-300 scale-95">
+        </div>
+    </div>
+
     {{-- CTA --}}
     <section class="py-38 bg-light">
         <div class="container mx-auto px-4 lg:px-8">
@@ -328,3 +342,7 @@
         </div>
     </section>
 @endsection
+
+@push('scripts')
+    <script src="{{ asset('js/pages/about.js') }}"></script>
+@endpush

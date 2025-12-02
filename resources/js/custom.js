@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const st = window.scrollY;
 
         // Navbar effect
-        if (st > 100) {
+        if (st > 100) {            
             navbar.classList.add('scrolled');
             navbar.classList.remove('bg-primary');
             logo.src = logo.dataset.light;
@@ -22,7 +22,6 @@ document.addEventListener('DOMContentLoaded', function () {
         // Close all mobile dropdowns on big scroll
         if (Math.abs(st - handleScroll.lastScroll || 0) > 50) {
             mobileDropdowns.forEach(dropdown => {
-                dropdown.querySelector('.mobile-dropdown-toggle')?.classList.remove('active');
                 dropdown.querySelector('.mobile-dropdown-content')?.classList.remove('active');
             });
         }

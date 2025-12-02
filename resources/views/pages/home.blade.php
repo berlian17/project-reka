@@ -22,7 +22,7 @@
                     </p>
 
                     <div class="flex flex-col sm:flex-row justify-center gap-4 fade-in-up" style="animation-delay: 0.4s;">
-                        <a href="{{ route('project.index') }}" class="btn-primary rounded-xl font-semibold inline-flex items-center justify-center gap-2 group">
+                        <a href="{{ route('service.index') }}" class="btn-primary rounded-xl font-semibold inline-flex items-center justify-center gap-2 group">
                             Explore Services
                             <i class="fas fa-arrow-right transition-transform group-hover:translate-x-1"></i>
                         </a>
