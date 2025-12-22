@@ -3,9 +3,9 @@
         <div class="flex items-center justify-between py-4">
             {{-- Logo --}}
             <a href="{{ route('home') }}">
-                <img src="{{ asset('images/REKA-INTERNATIONAL-SERVICES_LOGO-2.png') }}" alt="Reka International Services"
-                    data-light="{{ asset('images/REKA-INTERNATIONAL-SERVICES_LOGO-1.png') }}"
-                    data-dark="{{ asset('images/REKA-INTERNATIONAL-SERVICES_LOGO-2.png') }}"
+                <img src="{{ env('CMS_URL') . $appSettings->logo2 }}" alt="Reka International Services"
+                    data-light="{{ env('CMS_URL') . $appSettings->logo1 }}"
+                    data-dark="{{ env('CMS_URL') . $appSettings->logo2 }}"
                     class="h-8 w-auto" id="nav-logo"
                 />
             </a>
@@ -27,31 +27,13 @@
                     </button>
                     <div class="dropdown-menu absolute left-0 top-full w-80 bg-white rounded-2xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
                         <div class="p-4">
-                            <a href="{{ route('service.show', 'Chemical-Solutions') }}" class="dropdown-item flex items-start gap-3 p-3 rounded-xl hover:bg-gray-100 transition group/item {{ request()->slug === 'Chemical-Solutions' ? 'text-secondary bg-gray-100 active' : '' }}">
-                                <div class="text-primary font-semibold text-sm group-hover/item:text-secondary transition">
-                                    Chemical Solutions
-                                </div>
-                            </a>
-                            <a href="#" class="dropdown-item flex items-start gap-3 p-3 rounded-xl hover:bg-gray-100 transition group/item">
-                                <div class="text-primary font-semibold text-sm group-hover/item:text-secondary transition">
-                                    MPS (Welder, Mechanic, Technician)
-                                </div>
-                            </a>
-                            <a href="#" class="dropdown-item flex items-start gap-3 p-3 rounded-xl hover:bg-gray-100 transition group/item">
-                                <div class="text-primary font-semibold text-sm group-hover/item:text-secondary transition">
-                                    Non-Destructive Test (NDT)
-                                </div>
-                            </a>
-                            <a href="#" class="dropdown-item flex items-start gap-3 p-3 rounded-xl hover:bg-gray-100 transition group/item">
-                                <div class="text-primary font-semibold text-sm group-hover/item:text-secondary transition">
-                                    Steel Construction
-                                </div>
-                            </a>
-                            <a href="#" class="dropdown-item flex items-start gap-3 p-3 rounded-xl hover:bg-gray-100 transition group/item">
-                                <div class="text-primary font-semibold text-sm group-hover/item:text-secondary transition">
-                                    Water & Waste Water Treatment (EPC)
-                                </div>
-                            </a>
+                            @foreach ($appServices as $item)
+                                <a href="{{ route('service.show', $item->slug) }}" class="dropdown-item flex items-start gap-3 p-3 rounded-xl hover:bg-gray-100 transition group/item {{ request()->route('slug') === $item->slug ? 'text-secondary bg-gray-100 active' : '' }}">
+                                    <div class="text-primary font-semibold text-sm group-hover/item:text-secondary transition">
+                                        {{ $item->title }}
+                                    </div>
+                                </a>
+                            @endforeach
                             <div class="mt-4 pt-4 border-t border-gray-100">
                                 <a href="{{ route('service.index') }}" class="flex items-center justify-center gap-2 text-secondary font-semibold text-sm hover:gap-3 transition-all">
                                     View All Services
@@ -96,21 +78,11 @@
                         <i class="fas fa-chevron-down text-sm transition-transform"></i>
                     </button>
                     <div class="mobile-dropdown-content pl-4 mt-1 space-y-1">
-                        <a href="{{ route('service.show', 'Chemical-Solutions') }}" class="block px-4 py-2 text-sm hover:bg-white/10 rounded-lg transition">
-                            Chemical Solutions
-                        </a>
-                        <a href="#" class="block px-4 py-2 text-sm hover:bg-white/10 rounded-lg transition">
-                            MPS (Welder, Mechanic, Technician)
-                        </a>
-                        <a href="#" class="block px-4 py-2 text-sm hover:bg-white/10 rounded-lg transition">
-                            Non-Destructive Test (NDT)
-                        </a>
-                        <a href="#" class="block px-4 py-2 text-sm hover:bg-white/10 rounded-lg transition">
-                            Steel Construction
-                        </a>
-                        <a href="#" class="block px-4 py-2 text-sm hover:bg-white/10 rounded-lg transition">
-                            Water & Waste Water Treatment (EPC)
-                        </a>
+                        @foreach ($appServices as $item)
+                            <a href="{{ route('service.show', $item->slug) }}" class="block px-4 py-2 text-sm hover:bg-white/10 rounded-lg transition">
+                                {{ $item->title }}
+                            </a>
+                        @endforeach
                         <a href="{{ route('service.index') }}" class="block px-4 py-2 text-sm text-secondary font-semibold hover:bg-white/10 rounded-lg transition">
                             View All Services
                         </a>

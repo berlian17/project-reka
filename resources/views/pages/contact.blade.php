@@ -51,14 +51,14 @@
                                 <div>
                                     <p class="icon-title">Head Office</p>
                                     <p class="text-sm leading-relaxed">
-                                        Jl. Ciremai Raya No.BA 234, Kayuringin Jaya, Kec. Bekasi Sel., Kota Bks, Jawa Barat 17144
+                                        {{ $appSettings->address }}
                                     </p>
                                 </div>
                             </div>
                         </div>
 
                         <a href="#" 
-                            onclick="window.open('https://api.whatsapp.com/send?phone=6281291253630&text=Hello,%20I%20would%20like%20to%20inquire%20further%20about%20your%20services.', '_blank'); return false;" 
+                            onclick="window.open('https://api.whatsapp.com/send?phone={{ $appSettings->whatsapp }}&text=Hello,%20I%20would%20like%20to%20inquire%20further%20about%20your%20services.', '_blank'); return false;" 
                             class="text-sm leading-relaxed">
                             <div class="card info-card rounded-2xl p-6 mb-5 border border-gray-300 hover:border-secondary">
                                 <div class="flex items-start gap-4">
@@ -68,14 +68,14 @@
                                     <div>
                                         <p class="icon-title">Phone</p>
                                         <p class="text-sm leading-relaxed">
-                                            +62 812-9125-3630
+                                            {{ preg_replace('/^(\d{2})(\d{3})(\d{4})(\d+)$/', '+$1 $2-$3-$4', $appSettings->whatsapp) }}
                                         </p>
                                     </div>
                                 </div>
                             </div>
                         </a>
 
-                        <a href="mailto:tony@rekain.com">
+                        <a href="mailto:{{ $appSettings->email }}">
                             <div class="card info-card rounded-2xl p-6 mb-5 border border-gray-300 hover:border-secondary">
                                 <div class="flex items-start gap-4">
                                     <div class="icon-box w-14 h-14 rounded-xl flex items-center justify-center shrink-0 my-auto">
@@ -84,7 +84,7 @@
                                     <div>
                                         <p class="icon-title">Email</p>
                                         <p class="text-sm leading-relaxed">
-                                            tony@rekain.com
+                                            {{ $appSettings->email }}
                                         </p>
                                     </div>
                                 </div>

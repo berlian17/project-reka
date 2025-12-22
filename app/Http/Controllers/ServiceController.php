@@ -2,17 +2,30 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Service;
 use Illuminate\Http\Request;
 
 class ServiceController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
-        return view('pages.services.index');
+        $services = Service::where('status', 1)
+            ->paginate(9)
+            ->withQueryString();
+
+        if ($request->ajax()) {
+            return view('pages.services.partials.list', compact('services'))->render();
+        }
+
+        return view('pages.services.index', compact('services'));
     }
 
-    public function show()
+    public function show($slug)
     {
-        return view('pages.services.show');
+        $service = Service::where('slug', $slug)
+            ->where('status', 1)
+            ->firstOrFail();
+
+        return view('pages.services.show', compact('service'));
     }
 }

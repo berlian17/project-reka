@@ -24,36 +24,46 @@
     {{-- Latest --}}
     <section class="pt-38 bg-white">
         <div class="container mx-auto px-4 lg:px-8">
-            <div class="card latest-media-card max-w-6xl mx-auto rounded-3xl shadow-2xl overflow-hidden border border-gray-100 fade-in-up" data-delay="0">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-0">
-                    <div class="relative h-auto overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop"
-                            alt="Latest News"
-                            class="w-full h-full object-cover">
+            <div class="card latest-media-card max-w-6xl mx-auto rounded-3xl shadow-2xl overflow-hidden border border-gray-100 lg:h-[380px] fade-in-up" data-delay="0">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-0 h-full">
+                    <div class="relative h-full overflow-hidden">
+                        <img src="{{ env('CMS_URL') . $latestMedia->cover_img }}" alt="latest-media-img" class="w-full h-full object-cover">
                         <div class="absolute top-6 left-6">
-                            <span class="inline-block bg-secondary text-white px-4 py-2 rounded-full font-semibold">
-                                News
-                            </span>
+                            @if ($latestMedia->category === 'News')
+                                <span class="inline-block bg-secondary text-white px-4 py-2 rounded-full font-semibold">
+                                    {{ $latestMedia->category }}
+                                </span>
+                            @elseif ($latestMedia->category === 'Blogs')
+                                <span class="inline-block bg-blue-600 text-white px-4 py-2 rounded-full font-semibold">
+                                    {{ $latestMedia->category }}
+                                </span>
+                            @elseif ($latestMedia->category === 'Events')
+                                <span class="inline-block bg-purple-600 text-white px-4 py-2 rounded-full font-semibold">
+                                    {{ $latestMedia->category }}
+                                </span>
+                            @endif
                         </div>
                     </div>
-                    <div class="p-8 flex flex-col justify-center">
-                        <div class="flex items-center gap-4 font-semibold mb-4">
-                            <span class="flex items-center gap-2">
-                                <i class="fas fa-calendar"></i>
-                                October 21, 2025
-                            </span>
-                            <span class="flex items-center gap-2">
-                                <i class="fas fa-user"></i>
-                                Admin
-                            </span>
+                    <div class="p-8 flex flex-col h-full">
+                        <div>
+                            <div class="flex items-center gap-4 font-semibold mb-4">
+                                <span class="flex items-center gap-2">
+                                    <i class="fas fa-calendar"></i>
+                                    {{ date('F d, Y', strtotime($latestMedia->created_at)) }}
+                                </span>
+                                <span class="flex items-center gap-2">
+                                    <i class="fas fa-user"></i>
+                                    {{ ucfirst($latestMedia->author) }}
+                                </span>
+                            </div>
+                            <h2 class="text-3xl md:text-4xl font-bold text-primary mb-6 leading-tight">
+                                {{ $latestMedia->title }}
+                            </h2>
+                            <p class="mb-8 leading-relaxed">
+                                {{ Str::limit($latestMedia->excerpt, 250, '...') }}
+                            </p>
                         </div>
-                        <h2 class="text-3xl md:text-4xl font-bold text-primary mb-6 leading-tight">
-                            REKA Wins Environmental Excellence Award
-                        </h2>
-                        <p class="mb-8 leading-relaxed">
-                            PT. REKA INTERNATIONAL SERVICES, consectetur adipiscing elit. Fusce sed enim sed ante efficitur aliquet non a minus. Nulla pharetra eget mauris a pretium. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque et augue placerat nunc porta sodales. Sed a felis et...
-                        </p>
-                        <a href="{{ route('media.show', 1) }}" class="btn-primary rounded-lg font-semibold inline-flex items-center gap-2 group w-fit">
+                        <a href="{{ route('media.show', $latestMedia->slug) }}" class="btn-primary rounded-lg font-semibold inline-flex items-center gap-2 group w-fit mt-auto">
                             Read More
                             <i class="fas fa-arrow-right transition-transform group-hover:translate-x-1"></i>
                         </a>
@@ -63,234 +73,65 @@
         </div>
     </section>
 
-    <!-- Filter & Search -->
-    <section class="py-12 bg-white">
+    {{-- Filter & Search --}}
+    <section id="medias" class="py-12 bg-white">
         <div class="container mx-auto px-4 lg:px-8">
             <div class="flex flex-col md:flex-row max-w-6xl mx-auto justify-between items-center gap-6 fade-in-up" data-delay="0">
-                <!-- Filter Buttons -->
+                {{-- Filter Buttons --}}
                 <div class="flex flex-wrap gap-3">
-                    <button class="filter-btn {{ !request('category') || request('category') == 'all' ? 'active' : '' }} px-6 py-3 rounded-lg font-semibold text-sm border border-gray-200"
-                            data-category="all">
+                    <a href="{{ route('media.index', ['category' => 'All']) }}#medias"
+                        class="filter-btn {{ !request('category') || request('category') == 'All' ? 'active' : '' }} px-6 py-3 rounded-lg font-semibold text-sm border border-gray-200">
                         All Media
-                    </button>
-                    <button class="filter-btn {{ request('category') == 'news' ? 'active' : '' }} px-6 py-3 rounded-lg font-semibold text-sm border border-gray-200"
-                            data-category="news">
+                    </a>
+                    <a href="{{ route('media.index', ['category' => 'News']) }}#medias"
+                        class="filter-btn {{ request('category') == 'News' ? 'active' : '' }} px-6 py-3 rounded-lg font-semibold text-sm border border-gray-200">
                         News
-                    </button>
-                    <button class="filter-btn {{ request('category') == 'events' ? 'active' : '' }} px-6 py-3 rounded-lg font-semibold text-sm border border-gray-200"
-                            data-category="events">
+                    </a>
+                    <a href="{{ route('media.index', ['category' => 'Events']) }}#medias"
+                        class="filter-btn {{ request('category') == 'Events' ? 'active' : '' }} px-6 py-3 rounded-lg font-semibold text-sm border border-gray-200">
                         Events
-                    </button>
-                    <button class="filter-btn {{ request('category') == 'blogs' ? 'active' : '' }} px-6 py-3 rounded-lg font-semibold text-sm border border-gray-200"
-                            data-category="blogs">
+                    </a>
+                    <a href="{{ route('media.index', ['category' => 'Blogs']) }}#medias"
+                        class="filter-btn {{ request('category') == 'Blogs' ? 'active' : '' }} px-6 py-3 rounded-lg font-semibold text-sm border border-gray-200">
                         Blogs
-                    </button>
+                    </a>
                 </div>
 
                 <!-- Search -->
-                <div class="relative w-full md:w-auto">
-                    <input
-                        type="text"
-                        id="search-input"
-                        placeholder="Search articles..."
+                <form action="{{ route('media.index') }}" method="GET" class="relative w-full md:w-auto">
+                    @if(request('category'))
+                        <input type="hidden" name="category" value="{{ request('category') }}">
+                    @endif
+
+                    <input 
+                        type="text" 
+                        id="searchInput"
+                        data-url="{{ route('media.index') }}"
+                        data-category="{{ request('category') }}"
                         value="{{ request('search') }}"
+                        placeholder="Search media..." 
                         class="w-full md:w-80 pl-12 pr-4 py-3 rounded-lg border border-gray-300 focus:outline-none transition"
                     >
                     <i class="fas fa-search absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
-                </div>
+                </form>
             </div>
         </div>
     </section>
 
     <section class="pb-38 bg-white">
         <div class="container mx-auto px-4 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-                <a href="{{ route('media.show', 1) }}" class="card latest-media-card max-w-6xl mx-auto rounded-3xl shadow-2xl overflow-hidden border border-gray-100 fade-in-up" data-delay="0">
-                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-0">
-                        <div class="relative h-auto overflow-hidden lg:col-span-1">
-                            <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=500&h=400&fit=crop"
-                                alt="Media"
-                                class="w-full h-full object-cover">
-                            <div class="absolute top-6 left-6">
-                                <span class="inline-block bg-secondary text-white text-xs px-4 py-2 rounded-full font-semibold">
-                                    News
-                                </span>
-                            </div>
-                        </div>
-                        <div class="p-8 flex flex-col flex-1 lg:col-span-2">
-                            <div class="flex items-center gap-4 font-semibold mb-2">
-                                <div class="text-sm mb-2 font-semibold">
-                                    <i class="fas fa-calendar mr-2"></i>October 21, 2025
-                                </div>
-                            </div>
-                            <h3 class="text-xl font-bold text-primary mb-4 leading-tight">
-                                Capitalize on low hanging fruit to identify
-                            </h3>
-                            <p class="mb-4 leading-relaxed flex-1">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, varius tellus. Fusce a...
-                            </p>
-                            <div class="inline-flex items-center text-secondary font-semibold gap-2 group mt-auto">
-                                Read More
-                                <i class="fas fa-arrow-right transition-transform group-hover:translate-x-1"></i>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <a href="#" class="card latest-media-card max-w-6xl mx-auto rounded-3xl shadow-2xl overflow-hidden border border-gray-100 fade-in-up" data-delay="0">
-                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-0">
-                        <div class="relative h-auto overflow-hidden lg:col-span-1">
-                            <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&h=400&fit=crop"
-                                alt="Media"
-                                class="w-full h-full object-cover">
-                            <div class="absolute top-6 left-6">
-                                <span class="inline-block bg-blue-600 text-white text-xs px-4 py-2 rounded-full font-semibold">
-                                    Blogs
-                                </span>
-                            </div>
-                        </div>
-                        <div class="p-8 flex flex-col flex-1 lg:col-span-2">
-                            <div class="flex items-center gap-4 font-semibold mb-2">
-                                <div class="text-sm mb-2 font-semibold">
-                                    <i class="fas fa-calendar mr-2"></i>October 21, 2025
-                                </div>
-                            </div>
-                            <h3 class="text-xl font-bold text-primary mb-4 leading-tight">
-                                Capitalize on low hanging fruit to identify
-                            </h3>
-                            <p class="mb-4 leading-relaxed flex-1">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, varius tellus. Fusce a...
-                            </p>
-                            <div class="inline-flex items-center text-secondary font-semibold gap-2 group mt-auto">
-                                Read More
-                                <i class="fas fa-arrow-right transition-transform group-hover:translate-x-1"></i>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <a href="#" class="card latest-media-card max-w-6xl mx-auto rounded-3xl shadow-2xl overflow-hidden border border-gray-100 fade-in-up" data-delay="0">
-                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-0">
-                        <div class="relative h-auto overflow-hidden lg:col-span-1">
-                            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&h=400&fit=crop"
-                                alt="Media"
-                                class="w-full h-full object-cover">
-                            <div class="absolute top-6 left-6">
-                                <span class="inline-block bg-purple-600 text-white text-xs px-4 py-2 rounded-full font-semibold">
-                                    Events
-                                </span>
-                            </div>
-                        </div>
-                        <div class="p-8 flex flex-col flex-1 lg:col-span-2">
-                            <div class="flex items-center gap-4 font-semibold mb-2">
-                                <div class="text-sm mb-2 font-semibold">
-                                    <i class="fas fa-calendar mr-2"></i>October 21, 2025
-                                </div>
-                            </div>
-                            <h3 class="text-xl font-bold text-primary mb-4 leading-tight">
-                                Capitalize on low hanging fruit to identify
-                            </h3>
-                            <p class="mb-4 leading-relaxed flex-1">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, varius tellus. Fusce a...
-                            </p>
-                            <div class="inline-flex items-center text-secondary font-semibold gap-2 group mt-auto">
-                                Read More
-                                <i class="fas fa-arrow-right transition-transform group-hover:translate-x-1"></i>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <a href="{{ route('media.show', 1) }}" class="card latest-media-card max-w-6xl mx-auto rounded-3xl shadow-2xl overflow-hidden border border-gray-100 fade-in-up" data-delay="0">
-                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-0">
-                        <div class="relative h-auto overflow-hidden lg:col-span-1">
-                            <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=500&h=400&fit=crop"
-                                alt="Media"
-                                class="w-full h-full object-cover">
-                            <div class="absolute top-6 left-6">
-                                <span class="inline-block bg-secondary text-white text-xs px-4 py-2 rounded-full font-semibold">
-                                    News
-                                </span>
-                            </div>
-                        </div>
-                        <div class="p-8 flex flex-col flex-1 lg:col-span-2">
-                            <div class="flex items-center gap-4 font-semibold mb-2">
-                                <div class="text-sm mb-2 font-semibold">
-                                    <i class="fas fa-calendar mr-2"></i>October 21, 2025
-                                </div>
-                            </div>
-                            <h3 class="text-xl font-bold text-primary mb-4 leading-tight">
-                                Capitalize on low hanging fruit to identify
-                            </h3>
-                            <p class="mb-4 leading-relaxed flex-1">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, varius tellus. Fusce a...
-                            </p>
-                            <div class="inline-flex items-center text-secondary font-semibold gap-2 group mt-auto">
-                                Read More
-                                <i class="fas fa-arrow-right transition-transform group-hover:translate-x-1"></i>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <a href="#" class="card latest-media-card max-w-6xl mx-auto rounded-3xl shadow-2xl overflow-hidden border border-gray-100 fade-in-up" data-delay="0">
-                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-0">
-                        <div class="relative h-auto overflow-hidden lg:col-span-1">
-                            <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&h=400&fit=crop"
-                                alt="Media"
-                                class="w-full h-full object-cover">
-                            <div class="absolute top-6 left-6">
-                                <span class="inline-block bg-blue-600 text-white text-xs px-4 py-2 rounded-full font-semibold">
-                                    Blogs
-                                </span>
-                            </div>
-                        </div>
-                        <div class="p-8 flex flex-col flex-1 lg:col-span-2">
-                            <div class="flex items-center gap-4 font-semibold mb-2">
-                                <div class="text-sm mb-2 font-semibold">
-                                    <i class="fas fa-calendar mr-2"></i>October 21, 2025
-                                </div>
-                            </div>
-                            <h3 class="text-xl font-bold text-primary mb-4 leading-tight">
-                                Capitalize on low hanging fruit to identify
-                            </h3>
-                            <p class="mb-4 leading-relaxed flex-1">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, varius tellus. Fusce a...
-                            </p>
-                            <div class="inline-flex items-center text-secondary font-semibold gap-2 group mt-auto">
-                                Read More
-                                <i class="fas fa-arrow-right transition-transform group-hover:translate-x-1"></i>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <a href="#" class="card latest-media-card max-w-6xl mx-auto rounded-3xl shadow-2xl overflow-hidden border border-gray-100 fade-in-up" data-delay="0">
-                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-0">
-                        <div class="relative h-auto overflow-hidden lg:col-span-1">
-                            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&h=400&fit=crop"
-                                alt="Media"
-                                class="w-full h-full object-cover">
-                            <div class="absolute top-6 left-6">
-                                <span class="inline-block bg-purple-600 text-white text-xs px-4 py-2 rounded-full font-semibold">
-                                    Events
-                                </span>
-                            </div>
-                        </div>
-                        <div class="p-8 flex flex-col flex-1 lg:col-span-2">
-                            <div class="flex items-center gap-4 font-semibold mb-2">
-                                <div class="text-sm mb-2 font-semibold">
-                                    <i class="fas fa-calendar mr-2"></i>October 21, 2025
-                                </div>
-                            </div>
-                            <h3 class="text-xl font-bold text-primary mb-4 leading-tight">
-                                Capitalize on low hanging fruit to identify
-                            </h3>
-                            <p class="mb-4 leading-relaxed flex-1">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, varius tellus. Fusce a...
-                            </p>
-                            <div class="inline-flex items-center text-secondary font-semibold gap-2 group mt-auto">
-                                Read More
-                                <i class="fas fa-arrow-right transition-transform group-hover:translate-x-1"></i>
-                            </div>
-                        </div>
-                    </div>
-                </a>
+            <div id="loadingOverlay" class="hidden absolute inset-0 bg-white/90 flex items-center justify-center z-50">
+                <div class="flex flex-col items-center gap-3">
+                    <svg class="animate-spin h-8 w-8 text-blue-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                        <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                    </svg>
+                    <span class="text-sm text-gray-600 font-medium">Loading data...</span>
+                </div>
+            </div>
+
+            <div id="tableWrapper" class="overflow-x-auto">
+                @include('pages.media.partials.list')
             </div>
         </div>
     </section>

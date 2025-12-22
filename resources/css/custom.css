@@ -6,6 +6,14 @@ h1, h2, h3, h4, h5, h6, .font-heading {
     font-family: 'Bricolage Grotesque', sans-serif; 
 }
 
+ul {
+    list-style: disc;
+}
+
+ol {
+    list-style: decimal;
+}
+
 p {
     line-height: 1.625;
     color: #5c6165;

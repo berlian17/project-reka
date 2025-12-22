@@ -58,19 +58,19 @@
         <div class="container mx-auto px-4 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
                 <div class="text-white p-8 text-center fade-in-up" data-delay="0">
-                    <div class="bricolage-font text-6xl md:text-7xl font-bold text-secondary float-animation mb-4">18+</div>
+                    <div class="bricolage-font text-6xl md:text-7xl font-bold text-secondary float-animation mb-4">{{ $statisticYears }}+</div>
                     <p class="text-white! text-xl font-semibold mb-2">Years Experience</p>
                     <p class="text-white! text-sm opacity-80">Serving industrial clients</p>
                 </div>
                 
                 <div class="text-white p-8 text-center fade-in-up" data-delay="0">
-                    <div class="bricolage-font text-6xl md:text-7xl font-bold text-secondary float-animation mb-4">14+</div>
+                    <div class="bricolage-font text-6xl md:text-7xl font-bold text-secondary float-animation mb-4">{{ $statisticProjects }}+</div>
                     <p class="text-white! text-xl font-semibold mb-2">Projects Completed</p>
                     <p class="text-white! text-sm opacity-80">Successful implementations</p>
                 </div>
                 
                 <div class="text-white p-8 text-center fade-in-up" data-delay="0">
-                    <div class="bricolage-font text-6xl md:text-7xl font-bold text-secondary float-animation mb-4">19+</div>
+                    <div class="bricolage-font text-6xl md:text-7xl font-bold text-secondary float-animation mb-4">{{ $statisticIndustries }}+</div>
                     <p class="text-white! text-xl font-semibold mb-2">Industries Served</p>
                     <p class="text-white! text-sm opacity-80">Diverse sectors</p>
                 </div>

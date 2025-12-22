@@ -34,86 +34,18 @@
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 max-w-6xl mx-auto">
-                <a href="{{ route('service.show', 'Chemical-Solutions') }}" class="card p-8 rounded-3xl text-center transform hover:scale-105 shadow-2xl border border-gray-100 flex flex-col items-center fade-in-up" data-delay="0">
-                    <div class="bg-primary w-28 h-28 icon-circle rounded-full flex items-center justify-center mb-8">
-                        <i class="fa-solid fa-flask text-white text-5xl"></i>
-                    </div>
-                    <p class="text-primary! text-xl font-semibold mb-2">
-                        Chemical Solutions
-                    </p>
-                    <p class="mb-4 leading-relaxed">
-                        High-quality chemical solutions specifically formulated for industrial water and wastewater treatment applications.
-                    </p>
-                    <div class="inline-flex items-center text-secondary font-semibold gap-2 group mt-auto">
-                        Learn More
-                        <i class="fas fa-arrow-right transition-transform group-hover:translate-x-1"></i>
-                    </div>
-                </a>
+            <div id="loadingOverlay" class="hidden absolute inset-0 bg-white/90 flex items-center justify-center z-50">
+                <div class="flex flex-col items-center gap-3">
+                    <svg class="animate-spin h-8 w-8 text-blue-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                        <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                    </svg>
+                    <span class="text-sm text-gray-600 font-medium">Loading data...</span>
+                </div>
+            </div>
 
-                <a href="#" class="card p-8 rounded-3xl text-center transform hover:scale-105 shadow-2xl border border-gray-100 flex flex-col items-center fade-in-up" data-delay="300">
-                    <div class="bg-primary w-28 h-28 icon-circle rounded-full flex items-center justify-center mb-8">
-                        <i class="fa-solid fa-wrench text-white text-5xl"></i>
-                    </div>
-                    <p class="text-primary! text-xl font-semibold mb-2">
-                        MPS (Welder, Mechanic, Technician)
-                    </p>
-                    <p class="mb-4 leading-relaxed">
-                        Expert mechanical, piping, and technical services delivering reliable solutions for various industrial requirements.
-                    </p>
-                    <div class="inline-flex items-center text-secondary font-semibold gap-2 group mt-auto">
-                        Learn More
-                        <i class="fas fa-arrow-right transition-transform group-hover:translate-x-1"></i>
-                    </div>
-                </a>
-
-                <a href="#" class="card p-8 rounded-3xl text-center transform hover:scale-105 shadow-2xl border border-gray-100 flex flex-col items-center fade-in-up" data-delay="600">
-                    <div class="bg-primary w-28 h-28 icon-circle rounded-full flex items-center justify-center mb-8">
-                        <i class="fa-solid fa-microscope text-white text-5xl"></i>
-                    </div>
-                    <p class="text-primary! text-xl font-semibold mb-2">
-                        Non-Destructive Test (NDT)
-                    </p>
-                    <p class="mb-4 leading-relaxed">
-                        Inspection of material and weld quality without damaging the tested part.
-                    </p>
-                    <div class="inline-flex items-center text-secondary font-semibold gap-2 group mt-auto">
-                        Learn More
-                        <i class="fas fa-arrow-right transition-transform group-hover:translate-x-1"></i>
-                    </div>
-                </a>
-
-                <a href="#" class="card p-8 rounded-3xl text-center transform hover:scale-105 shadow-2xl border border-gray-100 flex flex-col items-center fade-in-up" data-delay="0">
-                    <div class="bg-primary w-28 h-28 icon-circle rounded-full flex items-center justify-center mb-8">
-                        <i class="fa-solid fa-hard-hat text-white text-5xl"></i>
-                    </div>
-                    <p class="text-primary! text-xl font-semibold mb-2">
-                        Steel Construction
-                    </p>
-                    <p class="mb-4 leading-relaxed">
-                        Fabrication and installation of steel structures and pipelines for industrial applications.
-                    </p>
-                    <div class="inline-flex items-center text-secondary font-semibold gap-2 group mt-auto">
-                        Learn More
-                        <i class="fas fa-arrow-right transition-transform group-hover:translate-x-1"></i>
-                    </div>
-                </a>
-
-                <a href="#" class="card p-8 rounded-3xl text-center transform hover:scale-105 shadow-2xl border border-gray-100 flex flex-col items-center fade-in-up" data-delay="600">
-                    <div class="bg-primary w-28 h-28 icon-circle rounded-full flex items-center justify-center mb-8">
-                        <i class="fa-solid fa-water text-white text-5xl"></i>
-                    </div>
-                    <p class="text-primary! text-xl font-semibold mb-2">
-                       Water & Waste Water Treatment (EPC)
-                    </p>
-                    <p class="mb-4 leading-relaxed">
-                        Design and construction of efficient water and wastewater treatment systems for industrial facilities.
-                    </p>
-                    <div class="inline-flex items-center text-secondary font-semibold gap-2 group mt-auto">
-                        Learn More
-                        <i class="fas fa-arrow-right transition-transform group-hover:translate-x-1"></i>
-                    </div>
-                </a>
+            <div id="tableWrapper" class="overflow-x-auto">
+                @include('pages.services.partials.list')
             </div>
         </div>
     </section>

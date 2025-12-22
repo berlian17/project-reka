@@ -82,19 +82,19 @@
         <div class="container mx-auto px-4 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
                 <div class="stat-card text-white p-8 rounded-3xl text-center transform hover:scale-105 shadow-2xl fade-in-up" data-delay="0">
-                    <div class="bricolage-font text-6xl md:text-7xl font-bold text-secondary mb-4">18+</div>
+                    <div class="bricolage-font text-6xl md:text-7xl font-bold text-secondary mb-4">{{ $statisticYears }}+</div>
                     <p class="text-white! text-xl font-semibold mb-2">Years Experience</p>
                     <p class="text-white! text-sm opacity-80">Serving industrial clients</p>
                 </div>
                 
                 <div class="stat-card text-white p-8 rounded-3xl text-center transform hover:scale-105 shadow-2xl fade-in-up" data-delay="0">
-                    <div class="bricolage-font text-6xl md:text-7xl font-bold text-secondary mb-4">14+</div>
+                    <div class="bricolage-font text-6xl md:text-7xl font-bold text-secondary mb-4">{{ $statisticProjects }}+</div>
                     <p class="text-white! text-xl font-semibold mb-2">Projects Completed</p>
                     <p class="text-white! text-sm opacity-80">Successful implementations</p>
                 </div>
                 
                 <div class="stat-card text-white p-8 rounded-3xl text-center transform hover:scale-105 shadow-2xl fade-in-up" data-delay="0">
-                    <div class="bricolage-font text-6xl md:text-7xl font-bold text-secondary mb-4">19+</div>
+                    <div class="bricolage-font text-6xl md:text-7xl font-bold text-secondary mb-4">{{ $statisticIndustries }}+</div>
                     <p class="text-white! text-xl font-semibold mb-2">Industries Served</p>
                     <p class="text-white! text-sm opacity-80">Diverse sectors</p>
                 </div>
@@ -167,53 +167,23 @@
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 max-w-6xl mx-auto fade-in-up" data-delay="0">
-                <a href="{{ route('service.show', 'Chemical-Solutions') }}" class="card p-8 rounded-3xl text-center transform hover:scale-105 shadow-2xl border border-gray-100 flex flex-col items-center">
-                    <div class="bg-primary w-28 h-28 icon-circle rounded-full flex items-center justify-center mb-8">
-                        <i class="fa-solid fa-flask text-white text-5xl"></i>
-                    </div>
-                    <p class="text-primary! text-xl font-semibold mb-2">
-                        Chemical Solutions
-                    </p>
-                    <p class="mb-4 leading-relaxed">
-                        High-quality chemical solutions specifically formulated for industrial water and wastewater treatment applications.
-                    </p>
-                    <div class="inline-flex items-center text-secondary font-semibold gap-2 group mt-auto">
-                        Learn More
-                        <i class="fas fa-arrow-right transition-transform group-hover:translate-x-1"></i>
-                    </div>
-                </a>
-
-                <a href="#" class="card p-8 rounded-3xl text-center transform hover:scale-105 shadow-2xl border border-gray-100 flex flex-col items-center">
-                    <div class="bg-primary w-28 h-28 icon-circle rounded-full flex items-center justify-center mb-8">
-                        <i class="fa-solid fa-wrench text-white text-5xl"></i>
-                    </div>
-                    <p class="text-primary! text-xl font-semibold mb-2">
-                        MPS (Welder, Mechanic, Technician)
-                    </p>
-                    <p class="mb-4 leading-relaxed">
-                        Expert mechanical, piping, and technical services delivering reliable solutions for various industrial requirements.
-                    </p>
-                    <div class="inline-flex items-center text-secondary font-semibold gap-2 group mt-auto">
-                        Learn More
-                        <i class="fas fa-arrow-right transition-transform group-hover:translate-x-1"></i>
-                    </div>
-                </a>
-
-                <a href="#" class="card p-8 rounded-3xl text-center transform hover:scale-105 shadow-2xl border border-gray-100 flex flex-col items-center">
-                    <div class="bg-primary w-28 h-28 icon-circle rounded-full flex items-center justify-center mb-8">
-                        <i class="fa-solid fa-microscope text-white text-5xl"></i>
-                    </div>
-                    <p class="text-primary! text-xl font-semibold mb-2">
-                        Non-Destructive Test (NDT)
-                    </p>
-                    <p class="mb-4 leading-relaxed">
-                        Inspection of material and weld quality without damaging the tested part.
-                    </p>
-                    <div class="inline-flex items-center text-secondary font-semibold gap-2 group mt-auto">
-                        Learn More
-                        <i class="fas fa-arrow-right transition-transform group-hover:translate-x-1"></i>
-                    </div>
-                </a>
+                @foreach ($services as $item)
+                    <a href="{{ route('service.show', $item->slug) }}" class="card p-8 rounded-3xl text-center transform hover:scale-105 shadow-2xl border border-gray-100 flex flex-col items-center fade-in-up" data-delay="0">
+                        <div class="bg-primary w-28 h-28 icon-circle rounded-full flex items-center justify-center mb-8">
+                            <i class="{{ $item->icon }} text-white text-5xl"></i>
+                        </div>
+                        <p class="text-primary! text-xl font-semibold mb-2">
+                            {{ $item->title }}
+                        </p>
+                        <p class="mb-4 leading-relaxed">
+                            {{ $item->short_desc }}
+                        </p>
+                        <div class="inline-flex items-center text-secondary font-semibold gap-2 group mt-auto">
+                            Learn More
+                            <i class="fas fa-arrow-right transition-transform group-hover:translate-x-1"></i>
+                        </div>
+                    </a>
+                @endforeach
             </div>
 
             <div class="flex flex-col sm:flex-row justify-center fade-in-up" data-delay="0">
@@ -397,92 +367,31 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 max-w-6xl mx-auto fade-in-up" data-delay="0">
-                <a href="{{ route('project.show', 'Water-&-Waste-Water-Treatment-(EPC)') }}" class="card project-card rounded-3xl shadow-2xl overflow-hidden border border-gray-100 flex flex-col fade-in-up" data-delay="0">
-                    <div class="relative h-52 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=500&h=400&fit=crop"
-                             alt="Project"
-                             class="w-full h-full object-cover">
-                        <div class="absolute inset-0 bg-linear-to-t from-primary/95 via-primary/50 to-transparent"></div>
-                        <div class="absolute bottom-4 left-6">
-                            <span class="inline-block bg-secondary text-white text-xs px-4 py-2 rounded-full font-semibold">
-                                Water & Waste Water Treatment (EPC)
-                            </span>
+                @foreach ($projects as $project)
+                    <a href="{{ route('project.show', $project->slug) }}" class="card project-card rounded-3xl shadow-2xl overflow-hidden border border-gray-100 flex flex-col fade-in-up" data-delay="0">
+                        <div class="relative h-52 overflow-hidden">
+                            <img src="{{ env('CMS_URL') . $project->cover_img }}" alt="project-img" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-linear-to-t from-primary/95 via-primary/50 to-transparent"></div>
+                            <div class="absolute bottom-4 left-6">
+                                <span class="inline-block bg-secondary text-white text-xs px-4 py-2 rounded-full font-semibold">
+                                    {{ $project->service_name }}
+                                </span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="p-8 flex flex-col flex-1">
-                        <div class="text-sm mb-2 font-semibold">
-                            <i class="fas fa-calendar mr-2"></i>October 21, 2025
+                        <div class="p-8 flex flex-col flex-1">
+                            <div class="text-sm mb-2 font-semibold">
+                                <i class="fas fa-calendar mr-2"></i>{{ date('F d, Y', strtotime($project->completion_date)) }}
+                            </div>
+                            <h3 class="text-xl font-bold text-primary mb-4 leading-tight">
+                                {{ $project->title }}
+                            </h3>
+                            <div class="inline-flex items-center text-secondary font-semibold gap-2 group mt-auto">
+                                Read More
+                                <i class="fas fa-arrow-right transition-transform group-hover:translate-x-1"></i>
+                            </div>
                         </div>
-                        <h3 class="text-xl font-bold text-primary mb-4 leading-tight">
-                            Reverse Osmosis 50 m3/hour
-                        </h3>
-                        <p class="mb-4 leading-relaxed flex-1">
-                            Lorem ipsum dolor sit amet, consectetu adipiscing elit, varius tellus. Fusce a eros ullamcorper sapien diam pretium eget...
-                        </p>
-                        <div class="inline-flex items-center text-secondary font-semibold gap-2 group mt-auto">
-                            Read More
-                            <i class="fas fa-arrow-right transition-transform group-hover:translate-x-1"></i>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="#" class="card project-card rounded-3xl shadow-2xl overflow-hidden border border-gray-100 flex flex-col fade-in-up" data-delay="300">
-                    <div class="relative h-52 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=500&h=400&fit=crop"
-                             alt="Project"
-                             class="w-full h-full object-cover">
-                        <div class="absolute inset-0 bg-linear-to-t from-primary/95 via-primary/50 to-transparent"></div>
-                        <div class="absolute bottom-4 left-6">
-                            <span class="inline-block bg-secondary text-white text-xs px-4 py-2 rounded-full font-semibold">
-                                Chemical Solutions
-                            </span>
-                        </div>
-                    </div>
-                    <div class="p-8 flex flex-col flex-1">
-                        <div class="text-sm mb-2 font-semibold">
-                            <i class="fas fa-calendar mr-2"></i>October 21, 2025
-                        </div>
-                        <h3 class="text-xl font-bold text-primary mb-4 leading-tight">
-                            Reverse Osmosis 192 m3/day
-                        </h3>
-                        <p class="mb-4 leading-relaxed flex-1">
-                            Lorem ipsum dolor sit amet, consectetu adipiscing elit, varius tellus. Fusce a eros ullamcorper sapien diam pretium eget...
-                        </p>
-                        <div class="inline-flex items-center text-secondary font-semibold gap-2 group mt-auto">
-                            Read More
-                            <i class="fas fa-arrow-right transition-transform group-hover:translate-x-1"></i>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="#" class="card project-card rounded-3xl shadow-2xl overflow-hidden border border-gray-100 flex flex-col fade-in-up" data-delay="600">
-                    <div class="relative h-52 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=500&h=400&fit=crop"
-                             alt="Project"
-                             class="w-full h-full object-cover">
-                        <div class="absolute inset-0 bg-linear-to-t from-primary/95 via-primary/50 to-transparent"></div>
-                        <div class="absolute bottom-4 left-6">
-                            <span class="inline-block bg-secondary text-white text-xs px-4 py-2 rounded-full font-semibold">
-                                Surface Treatment
-                            </span>
-                        </div>
-                    </div>
-                    <div class="p-8 flex flex-col flex-1">
-                        <div class="text-sm mb-2 font-semibold">
-                            <i class="fas fa-calendar mr-2"></i>October 21, 2025
-                        </div>
-                        <h3 class="text-xl font-bold text-primary mb-4 leading-tight">
-                            Sewage Treatment Plant FTI 24 m3/day
-                        </h3>
-                        <p class="mb-4 leading-relaxed flex-1">
-                            Lorem ipsum dolor sit amet, consectetu adipiscing elit, varius tellus. Fusce a eros ullamcorper sapien diam pretium eget...
-                        </p>
-                        <div class="inline-flex items-center text-secondary font-semibold gap-2 group mt-auto">
-                            Read More
-                            <i class="fas fa-arrow-right transition-transform group-hover:translate-x-1"></i>
-                        </div>
-                    </div>
-                </a>
+                    </a>
+                @endforeach
             </div>
 
             <div class="flex flex-col sm:flex-row justify-center fade-in-up" data-delay="0">

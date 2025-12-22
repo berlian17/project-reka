@@ -63,7 +63,8 @@
     margin-bottom: 16px;
 }
 
-.project-content ul, .project-content ol {
+.project-content ul,
+.project-content ol {
     margin-bottom: 1.5rem;
     padding-left: 1.5rem;
 }
@@ -71,6 +72,8 @@
 .project-content li {
     margin-bottom: 0.75rem;
     color: #4B5563;
+    word-break: break-word;
+    overflow-wrap: anywhere;
 }
 
 .project-content blockquote {
@@ -79,4 +82,14 @@
     margin: 2rem 0;
     font-style: italic;
     color: #6B7280;
+}
+
+.project-content img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 1.5rem;
+    box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1),
+                0 10px 10px -5px rgba(0,0,0,0.04);
+    margin: 1.5rem 0;
 }
