@@ -3,9 +3,9 @@
         <div class="flex items-center justify-between py-4">
             {{-- Logo --}}
             <a href="{{ route('home') }}">
-                <img src="{{ env('CMS_URL') . $appSettings->logo2 }}" alt="Reka International Services"
-                    data-light="{{ env('CMS_URL') . $appSettings->logo1 }}"
-                    data-dark="{{ env('CMS_URL') . $appSettings->logo2 }}"
+                <img src="{{ config('app.cms_url') . $appSettings->logo2 }}" alt="Reka International Services"
+                    data-light="{{ config('app.cms_url') . $appSettings->logo1 }}"
+                    data-dark="{{ config('app.cms_url') . $appSettings->logo2 }}"
                     class="h-8 w-auto" id="nav-logo"
                 />
             </a>
@@ -50,7 +50,7 @@
                 <a href="{{ route('media.index') }}" class="nav-link relative px-4 py-2 transition hover:text-secondary {{ request()->routeIs('media*') ? 'text-secondary active' : '' }}">
                     Media
                 </a>
-                <a href="{{ route('contact') }}" class="btn-primary text-white! rounded-lg transition shadow-lg hover:shadow-xl transform ml-2">
+                <a href="{{ route('contact.index') }}" class="btn-primary text-white! rounded-lg transition shadow-lg hover:shadow-xl transform ml-2">
                     Contact
                 </a>
             </div>
@@ -95,7 +95,7 @@
                 <a href="{{ route('media.index') }}" class="block px-4 py-3 hover:bg-white/10 rounded-lg transition {{ request()->routeIs('media*') ? 'bg-white/10 text-secondary active' : '' }}">
                     Media
                 </a>
-                <a href="{{ route('contact') }}" class="block px-4 py-3 hover:bg-white/10 rounded-lg transition {{ request()->routeIs('contact') ? 'bg-white/10 text-secondary active' : '' }}">
+                <a href="{{ route('contact.index') }}" class="block px-4 py-3 hover:bg-white/10 rounded-lg transition {{ request()->routeIs('contact') ? 'bg-white/10 text-secondary active' : '' }}">
                     Contact
                 </a>
             </div>

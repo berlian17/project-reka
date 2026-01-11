@@ -32,20 +32,20 @@
                     </h2>
                     <div class="w-[25%] h-1 bg-secondary mt-2 mb-8"></div>
                     <p class="leading-relaxed mb-4">
-                        <strong>PT. REKA INTERNATIONAL SERVICES</strong>, established on May 10, 2007, is an Engineering, Procurement, and Construction (EPC) company providing comprehensive Water and Wastewater Treatment solutions for Industrial clients across Indonesia.
+                        <strong>PT. Reka International Services (REKA)</strong> is an Engineering, Procurement, and Construction (EPC) company established in 2007, providing integrated engineering and industrial solutions for clients across Indonesia, with core expertise in Water and Wastewater Treatment.
                     </p>
                     <p class="leading-relaxed mb-4">
-                        Over the years, REKA has expanded its operations to include Civil, Mechanical, Electrical, Piping, and Instrumentation (CMEPI) solutions, and maintenance projects. Since 2024, the company has also begun expanding into the automotive manufacturing sector, focusing on EDP coating, painting, and work order services.
+                        Originally operating in the chemical sector, REKA has grown into a comprehensive EPC provider offering end-to-end services covering engineering design, procurement, fabrication, construction, installation, commissioning, and maintenance. These capabilities are strengthened by solid expertise in Civil, Mechanical, Electrical, Piping, and Instrumentation (CMEPI) works, as well as expansion into the automotive manufacturing sector.
                     </p>
                     <p class="leading-relaxed">
-                        Our strength lies in our unwavering commitment to quality, innovation, and environmental responsibility. Supported by a team of professional engineers, state-of-the-art equipment, and strong partnerships with leading international suppliers, we deliver innovative, efficient, and sustainable solutions tailored to meet the unique needs of each client.
+                        REKA is led by professional and highly qualified engineers with extensive multinational project experience and is supported by modern workshop facilities, reliable equipment, and strong partnerships with leading local and international suppliers. Our strong commitment to quality, innovation, safety, and environmental responsibility enables us to deliver cost-effective, reliable, and sustainable solutions, meeting international standards while building long-term partnerships with our clients.
                     </p>
                 </div>
 
                 <div class="order-1 lg:order-2 fade-in-up" data-delay="300">
                     <div class="relative">
                         <div class="absolute -top-4 -right-4 w-full h-full bg-secondary/10 rounded-2xl"></div>
-                        <img src="#" alt="about us"
+                        <img src="{{ asset('images/pages/about-us-page-1.webp') }}" alt="about us"
                              class="relative w-full h-[450px] object-cover rounded-2xl shadow-2xl">
                     </div>
                 </div>
@@ -64,7 +64,7 @@
                 </div>
                 
                 <div class="text-white p-8 text-center fade-in-up" data-delay="0">
-                    <div class="bricolage-font text-6xl md:text-7xl font-bold text-secondary float-animation mb-4">{{ $statisticProjects }}+</div>
+                    <div class="bricolage-font text-6xl md:text-7xl font-bold text-secondary float-animation mb-4">50+</div>
                     <p class="text-white! text-xl font-semibold mb-2">Projects Completed</p>
                     <p class="text-white! text-sm opacity-80">Successful implementations</p>
                 </div>
@@ -165,7 +165,7 @@
                         Experienced Team
                     </p>
                     <p class="leading-relaxed">
-                        18+ years of expertise in delivering innovative industrial solutions.
+                        {{ $statisticIndustries }}+ years of expertise in delivering innovative industrial solutions.
                     </p>
                 </div>
 
@@ -334,7 +334,7 @@
                     Let's discuss how we can help you achieve your goals with our innovative and sustainable solutions
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="{{ route('contact') }}" class="btn-primary text-lg rounded-lg font-semibold inline-flex items-center justify-center px-12 py-5">
+                    <a href="{{ route('contact.index') }}" class="btn-primary text-lg rounded-lg font-semibold inline-flex items-center justify-center px-12 py-5">
                         Get In Touch
                     </a>
                 </div>

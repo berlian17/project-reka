@@ -11,14 +11,14 @@
         <div id="heroCarousel" class="relative w-full h-screen">
             <div class="hero-slide absolute inset-0 opacity-100 transition-opacity duration-700 flex items-center justify-center text-center text-white" id="hero-slide-1">
                 <div class="z-10 container mx-auto px-4 lg:px-8">
-                    <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight fade-in-up">
+                    <h1 class="hero-text text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight fade-in-up">
                         PT. REKA INTERNATIONAL SERVICES
                     </h1>
-                    <p class="text-primary! text-xl font-bold md:text-2xl max-w-3xl mx-auto mb-6 fade-in-up" style="animation-delay: 0.2s;">
-                        Care to Green Environment
+                    <p class="hero-text text-secondary! text-xl font-bold md:text-2xl max-w-3xl mx-auto mb-6 fade-in-up" style="animation-delay: 0.2s;">
+                        Engineering Solutions for a Sustainable Industry
                     </p>
-                    <p class="text-white! max-w-3xl mx-auto mb-8 fade-in-up" style="animation-delay: 0.3s;">
-                        Leading provider of comprehensive Water and Wastewater Treatment solutions across Indonesia. Delivering excellence in Engineering, Procurement, and Construction services since 2007.
+                    <p class="hero-text text-white! max-w-3xl mx-auto mb-8 fade-in-up" style="animation-delay: 0.3s;">
+                        An Engineering, Procurement, and Construction (EPC) company delivering integrated water, wastewater, and industrial solutions across Indonesia since 2007.
                     </p>
 
                     <div class="flex flex-col sm:flex-row justify-center gap-4 fade-in-up" style="animation-delay: 0.4s;">
@@ -26,7 +26,7 @@
                             Explore Services
                             <i class="fas fa-arrow-right transition-transform group-hover:translate-x-1"></i>
                         </a>
-                        <a href="{{ route('contact') }}" class="bg-white/10 text-white backdrop-blur-sm border-2 border-white hover:bg-white hover:text-primary hover:scale-105 px-10 py-4 rounded-xl font-semibold transition inline-flex items-center justify-center gap-2 group">
+                        <a href="{{ route('contact.index') }}" class="bg-white/10 text-white backdrop-blur-sm border-2 border-white hover:bg-white hover:text-primary hover:scale-105 px-10 py-4 rounded-xl font-semibold transition inline-flex items-center justify-center gap-2 group">
                             <i class="fas fa-phone"></i>
                             Contact Us
                         </a>
@@ -36,28 +36,28 @@
 
             <div class="hero-slide absolute inset-0 opacity-0 transition-opacity duration-700 flex items-center justify-center text-center text-white" id="hero-slide-2">
                 <div class="z-10 container mx-auto px-4 lg:px-8">
-                    <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+                    <h1 class="hero-text text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
                         Engineering Excellence
                     </h1>
-                    <p class="text-primary! text-xl font-bold md:text-2xl max-w-3xl mx-auto mb-6">
-                        Trusted partner in Water Treatment System across Indonesia.
+                    <p class="hero-text text-secondary! text-xl font-bold md:text-2xl max-w-3xl mx-auto mb-6">
+                        End-to-End EPC Capabilities
                     </p>
-                    <p class="text-white! max-w-3xl mx-auto mb-8">
-                        Providing innovative Engineering, Procurement, and Construction solutions.
+                    <p class="hero-text text-white! max-w-3xl mx-auto mb-8">
+                        Delivering engineering, procurement, fabrication, construction, installation, commissioning, and maintenance services supported by strong CMEPI expertise.
                     </p>
                 </div>
             </div>
             
             <div class="hero-slide absolute inset-0 opacity-0 transition-opacity duration-700 flex items-center justify-center text-center text-white" id="hero-slide-3">
                 <div class="z-10 container mx-auto px-4 lg:px-8">
-                    <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-                        Sustainable Future
+                    <h1 class="hero-text text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+                        Building a Sustainable Future
                     </h1>
-                    <p class="text-primary! ext-xl font-bold md:text-2xl max-w-3xl mx-auto mb-6">
-                        Building eco-friendly water & wastewater systems.
+                    <p class="hero-text text-secondary! ext-xl font-bold md:text-2xl max-w-3xl mx-auto mb-6">
+                        Commitment to Environmental Responsibility
                     </p>
-                    <p class="text-white! max-w-3xl mx-auto mb-8 fade-in-up">
-                        Dedicated to environmental sustainability since 2007.
+                    <p class="hero-text text-white! max-w-3xl mx-auto mb-8 fade-in-up">
+                        Providing sustainable and environmentally responsible solutions that meet international standards and support long-term industrial growth.
                     </p>
                 </div>
             </div>
@@ -88,7 +88,7 @@
                 </div>
                 
                 <div class="stat-card text-white p-8 rounded-3xl text-center transform hover:scale-105 shadow-2xl fade-in-up" data-delay="0">
-                    <div class="bricolage-font text-6xl md:text-7xl font-bold text-secondary mb-4">{{ $statisticProjects }}+</div>
+                    <div class="bricolage-font text-6xl md:text-7xl font-bold text-secondary mb-4">50+</div>
                     <p class="text-white! text-xl font-semibold mb-2">Projects Completed</p>
                     <p class="text-white! text-sm opacity-80">Successful implementations</p>
                 </div>
@@ -112,7 +112,7 @@
                     </h2>
                     <div class="w-[25%] h-1 bg-secondary mt-2 mb-8"></div>
                     <p class="leading-relaxed mb-6">
-                        <strong>PT. REKA INTERNATIONAL SERVICES</strong>, established on May 10, 2007, is an Engineering, Procurement, and Construction (EPC) company providing comprehensive Water and Wastewater Treatment solutions for Industrial clients across Indonesia.
+                        <strong>PT. REKA INTERNATIONAL SERVICES</strong>, established in 2007, is an Engineering, Procurement, and Construction (EPC) company delivering integrated engineering and industrial solutions, including Water and Wastewater Treatment, for industrial clients across Indonesia.
                     </p>
                     
                     <div class="space-y-4 mb-6">
@@ -145,7 +145,7 @@
                 <div class="order-1 lg:order-2 mt-auto fade-in-up" data-delay="300">
                     <div class="relative">
                         <div class="absolute -top-4 -left-4 w-full h-full bg-secondary/10 rounded-2xl"></div>
-                        <img src="" alt="about us"
+                        <img src="{{ asset('images/pages/home-page-4.webp') }}" alt="about us"
                             class="relative w-full h-[450px] object-cover rounded-2xl shadow-2xl">
                     </div>
                 </div>
@@ -216,7 +216,7 @@
                         Experienced Team
                     </p>
                     <p class="leading-relaxed">
-                        18+ years of expertise in delivering innovative industrial solutions.
+                        {{ $statisticYears }}+ years of expertise in delivering innovative industrial solutions.
                     </p>
                 </div>
 
@@ -370,7 +370,7 @@
                 @foreach ($projects as $project)
                     <a href="{{ route('project.show', $project->slug) }}" class="card project-card rounded-3xl shadow-2xl overflow-hidden border border-gray-100 flex flex-col fade-in-up" data-delay="0">
                         <div class="relative h-52 overflow-hidden">
-                            <img src="{{ env('CMS_URL') . $project->cover_img }}" alt="project-img" class="w-full h-full object-cover">
+                            <img src="{{ config('app.cms_url') . $project->cover_img }}" alt="project-img" class="w-full h-full object-cover">
                             <div class="absolute inset-0 bg-linear-to-t from-primary/95 via-primary/50 to-transparent"></div>
                             <div class="absolute bottom-4 left-6">
                                 <span class="inline-block bg-secondary text-white text-xs px-4 py-2 rounded-full font-semibold">
@@ -413,7 +413,7 @@
                     Our team of experts is ready to help you achieve your operational goals
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="{{ route('contact') }}" class="btn-primary text-lg rounded-lg font-semibold inline-flex items-center justify-center px-12 py-5">
+                    <a href="{{ route('contact.index') }}" class="btn-primary text-lg rounded-lg font-semibold inline-flex items-center justify-center px-12 py-5">
                         Get In Touch
                     </a>
                 </div>

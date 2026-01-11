@@ -97,7 +97,7 @@
                 <div class="order-1 lg:order-2 fade-in-up" data-delay="300">
                     <div class="relative">
                         <div class="absolute -top-4 -right-4 w-full h-full bg-secondary/10 rounded-2xl"></div>
-                        <img src="#" alt="approach"
+                        <img src="{{ asset('images/pages/projects-page-1.webp') }}" alt="approach"
                             class="relative w-full h-[450px] object-cover rounded-2xl shadow-2xl">
                     </div>
                 </div>
@@ -116,7 +116,7 @@
                     Our team of experts is ready to help you achieve your operational goals
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="{{ route('contact') }}" class="btn-primary text-lg rounded-lg font-semibold inline-flex items-center justify-center px-12 py-5">
+                    <a href="{{ route('contact.index') }}" class="btn-primary text-lg rounded-lg font-semibold inline-flex items-center justify-center px-12 py-5">
                         Get In Touch
                     </a>
                 </div>

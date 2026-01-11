@@ -3,7 +3,7 @@
         <div class="grid grid-cols-1 md:grid-cols-12 gap-8 py-18">
             <div class="md:col-span-5">
                 <div class="flex mb-6">
-                    <img src="{{ env('CMS_URL') . $appSettings->logo2 }}" alt="Reka International Services" class="h-14 w-auto" />
+                    <img src="{{ config('app.cms_url') . $appSettings->logo2 }}" alt="Reka International Services" class="h-14 w-auto" />
                 </div>
                 <p class="text-white! mb-6 max-w-sm">
                     Providing reliable engineering, procurement, and construction solutions for water and wastewater treatment since 2007.

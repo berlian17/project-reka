@@ -15,7 +15,7 @@
                 </h1>
                 <div class="w-[15%] h-1 bg-secondary mx-auto mb-8 fade-in-up" style="animation-delay: 0.2s;"></div>
                 <p class="text-xl text-white! fade-in-up" style="animation-delay: 0.3s;">
-                    Comprehensive solutions for your industrial needs - Engineering, Procurement, and Construction services tailored to deliver excellence in water and wastewater treatment
+                    Delivering engineering, procurement, and construction solutions for water, wastewater, and industrial systems across Indonesia
                 </p>
             </div>
         </div>
@@ -116,7 +116,7 @@
                 </h2>
                 <div class="w-[10%] h-1 bg-secondary mx-auto mt-2 mb-8"></div>
                 <p class="max-w-2xl mx-auto leading-relaxed">
-                    Delivering specialized solutions across 19+ diverse industrial sectors
+                    Delivering specialized solutions across {{ $statisticIndustries }}+ diverse industrial sectors
             </div>
 
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
@@ -167,7 +167,7 @@
                     Contact us today for a consultation and discover how we can help achieve your goals with our comprehensive industrial solutions
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="{{ route('contact') }}" class="btn-primary text-lg rounded-lg font-semibold inline-flex items-center justify-center px-12 py-5">
+                    <a href="{{ route('contact.index') }}" class="btn-primary text-lg rounded-lg font-semibold inline-flex items-center justify-center px-12 py-5">
                         Get In Touch
                     </a>
                 </div>

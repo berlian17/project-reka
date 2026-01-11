@@ -4,7 +4,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+        <meta name="description" content="{{ $appSettings->description ?? '' }}">
+        <meta name="keywords" content="@yield('keywords', 'keyword1, keyword2, keyword3')">
+        <meta name="author" content="{{ $appSettings->app_name }}">
+        <meta name="robots" content="index, follow">
+        <meta name="googlebot" content="index, follow">
+        
         <title>@yield('title') | {{ $appSettings->app_name ?? config('app.name') }}</title>
 
         <link rel="icon" type="image/png" href="{{ asset('images/REKA-INTERNATIONAL-SERVICES_ICON.webp') }}">
@@ -12,6 +17,8 @@
         {{-- Bricolage Grotesque Fonts --}}
         <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
+        <link rel="canonical" href="{{ url()->current() }}">
+        
         {{-- Styles / Scripts --}}
         @vite(['resources/css/app.css', 'resources/js/app.js'])
 

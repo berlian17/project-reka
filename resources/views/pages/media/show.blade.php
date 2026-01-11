@@ -46,7 +46,7 @@
                 </div>
 
                 <div class="relative rounded-3xl shadow-2xl overflow-hidden mb-8 fade-in-up" data-delay="0">
-                    <img src="{{ env('CMS_URL') . $media->cover_img }}" alt="media-img" class="w-full h-[450px] object-cover">
+                    <img src="{{ config('app.cms_url') . $media->cover_img }}" alt="media-img" class="w-full h-[450px] object-cover">
                 </div>
             </div>
         </div>
@@ -87,7 +87,7 @@
                                     <a href="{{ route('media.show', $item->slug) }}" class="block group">
                                         <div class="flex gap-4">
                                             <div class="w-20 h-20 rounded-lg overflow-hidden shrink-0">
-                                                <img src="{{ env('CMS_URL') . $item->cover_img }}" alt="recent-media-img" class="w-full h-full object-cover group-hover:scale-110 transition">
+                                                <img src="{{ config('app.cms_url') . $item->cover_img }}" alt="recent-media-img" class="w-full h-full object-cover group-hover:scale-110 transition">
                                             </div>
                                             <div>
                                                 <p class="text-sm font-semibold text-primary! group-hover:text-secondary! transition mb-2 line-clamp-2">
@@ -105,7 +105,7 @@
                                 <a href="{{ route('media.show', $media->slug) }}" class="block group">
                                     <div class="flex gap-4">
                                         <div class="w-20 h-20 rounded-lg overflow-hidden shrink-0">
-                                            <img src="{{ env('CMS_URL') . $media->cover_img }}" alt="recent-media-img" class="w-full h-full object-cover group-hover:scale-110 transition">
+                                            <img src="{{ config('app.cms_url') . $media->cover_img }}" alt="recent-media-img" class="w-full h-full object-cover group-hover:scale-110 transition">
                                         </div>
                                         <div>
                                             <p class="text-sm font-semibold text-primary! group-hover:text-secondary! transition mb-2 line-clamp-2">

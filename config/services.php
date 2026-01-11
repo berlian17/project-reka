@@ -35,4 +35,7 @@ return [
         ],
     ],
 
+    'sitemap' => [
+        'api_key' => env('SITEMAP_API_KEY'),
+    ],
 ];

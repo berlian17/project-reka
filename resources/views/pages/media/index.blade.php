@@ -27,7 +27,7 @@
             <div class="card latest-media-card max-w-6xl mx-auto rounded-3xl shadow-2xl overflow-hidden border border-gray-100 lg:h-[380px] fade-in-up" data-delay="0">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-0 h-full">
                     <div class="relative h-full overflow-hidden">
-                        <img src="{{ env('CMS_URL') . $latestMedia->cover_img }}" alt="latest-media-img" class="w-full h-full object-cover">
+                        <img src="{{ config('app.cms_url') . $latestMedia->cover_img }}" alt="latest-media-img" class="w-full h-full object-cover">
                         <div class="absolute top-6 left-6">
                             @if ($latestMedia->category === 'News')
                                 <span class="inline-block bg-secondary text-white px-4 py-2 rounded-full font-semibold">

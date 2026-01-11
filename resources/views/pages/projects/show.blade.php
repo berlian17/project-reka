@@ -36,7 +36,7 @@
                 </div>
 
                 <div class="relative rounded-3xl shadow-2xl overflow-hidden mb-8 fade-in-up" data-delay="0">
-                    <img src="{{ env('CMS_URL') . $project->cover_img }}" alt="project-img" class="w-full h-[450px] object-cover">
+                    <img src="{{ config('app.cms_url') . $project->cover_img }}" alt="project-img" class="w-full h-[450px] object-cover">
                 </div>
             </div>
         </div>
@@ -62,7 +62,7 @@
                             <div class="grid grid-cols-2 gap-4">
                                 @foreach ($project->galleries as $item)
                                     <div class="project-img relative h-48 overflow-hidden group">
-                                        <img src="{{ env('CMS_URL') . $item->image }}" alt="gallery" class="w-full h-full object-cover rounded-lg transform cursor-pointer">
+                                        <img src="{{ config('app.cms_url') . $item->image }}" alt="gallery" class="w-full h-full object-cover rounded-lg transform cursor-pointer">
                                         <div class="absolute inset-0 bg-linear-to-t from-primary/80 to-transparent opacity-0 md:group-hover:opacity-100 transition-opacity rounded-lg"></div>
 
                                         {{-- Zoom Icon --}}
@@ -157,7 +157,7 @@
                     @foreach($relatedProjects as $relatedProject)
                         <a href="{{ route('project.show', $relatedProject->slug) }}" class="card project-card rounded-3xl shadow-2xl overflow-hidden border border-gray-100 flex flex-col fade-in-up" data-delay="0">
                             <div class="relative h-52 overflow-hidden">
-                                <img src="{{ env('CMS_URL') . $relatedProject->cover_img }}" alt="project-img" class="w-full h-full object-cover">
+                                <img src="{{ config('app.cms_url') . $relatedProject->cover_img }}" alt="project-img" class="w-full h-full object-cover">
                                 <div class="absolute inset-0 bg-linear-to-t from-primary/95 via-primary/50 to-transparent"></div>
                                 <div class="absolute bottom-4 left-6">
                                     <span class="inline-block bg-secondary text-white text-xs px-4 py-2 rounded-full font-semibold">
@@ -195,7 +195,7 @@
                     Our team of experts is ready to help you achieve your operational goals
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="{{ route('contact') }}" class="btn-primary text-lg rounded-lg font-semibold inline-flex items-center justify-center px-12 py-5">
+                    <a href="{{ route('contact.index') }}" class="btn-primary text-lg rounded-lg font-semibold inline-flex items-center justify-center px-12 py-5">
                         Get In Touch
                     </a>
                 </div>

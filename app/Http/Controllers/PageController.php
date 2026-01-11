@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\IndustrialType;
+use App\Models\Media;
 use App\Models\Project;
 use App\Models\Service;
 use Carbon\Carbon;
@@ -11,10 +11,6 @@ class PageController extends Controller
 {
     public function home()
     {
-        $statisticYears = Carbon::now()->year - 2007;
-        $statisticProjects = Project::count();
-        $statisticIndustries = IndustrialType::whereNull('deleted_at')->count();
-        
         $services = Service::where('status', 1)
             ->take(3)
             ->get();
@@ -25,9 +21,6 @@ class PageController extends Controller
             ->take(3);
 
         return view('pages.home', compact(
-            'statisticYears',
-            'statisticProjects',
-            'statisticIndustries',
             'services',
             'projects'
         ));
@@ -35,19 +28,71 @@ class PageController extends Controller
 
     public function about()
     {
-        $statisticYears = Carbon::now()->year - 2007;
-        $statisticProjects = Project::count();
-        $statisticIndustries = IndustrialType::whereNull('deleted_at')->count();
-
-        return view('pages.about', compact(
-            'statisticYears',
-            'statisticProjects',
-            'statisticIndustries'
-        ));
+        return view('pages.about');
     }
 
-    public function contact()
+    public function siteMap()
     {
-        return view('pages.contact');
+        $filePath = storage_path('app/public/sitemap.xml');
+        
+        // Cek apakah file sudah ada dan masih fresh (< 24 jam)
+        if (file_exists($filePath) && (time() - filemtime($filePath)) < 86400) {
+            $xml = file_get_contents($filePath);
+        } else {
+            $xml = $this->generateSitemap();
+            
+            // Simpan ke storage
+            file_put_contents($filePath, $xml);
+        }
+        
+        return response($xml, 200)
+            ->header('Content-Type', 'application/xml; charset=UTF-8');
+    }
+
+    public function generateSitemap()
+    {
+        $staticUrls = [
+            [
+                'loc'           => url('/'),
+                'changefreq'    => 'daily',
+                'priority'      => '1.0',
+            ],
+            [
+                'loc'           => url('/about'),
+                'changefreq'    => 'monthly',
+                'priority'      => '0.8',
+            ],
+            [
+                'loc'           => url('/contact'),
+                'changefreq'    => 'monthly',
+                'priority'      => '0.8',
+            ],
+            [
+                'loc'           => url('/projects'),
+                'changefreq'    => 'monthly',
+                'priority'      => '0.5',
+            ],
+            [
+                'loc'           => url('/services'),
+                'changefreq'    => 'monthly',
+                'priority'      => '0.5',
+            ],
+            [
+                'loc'           => url('/services'),
+                'changefreq'    => 'monthly',
+                'priority'      => '0.5',
+            ],
+        ];
+
+        $projects = Project::where('status', 1)->get();
+        $services = Service::where('status', 1)->get();
+        $medias = Media::where('status', 1)->get();
+
+        return view('sitemap', compact(
+            'staticUrls',
+            'projects',
+            'services',
+            'medias'
+        ))->render();
     }
 }

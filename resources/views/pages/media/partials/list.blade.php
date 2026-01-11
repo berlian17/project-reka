@@ -3,7 +3,7 @@
         <a href="{{ route('media.show', $item->slug) }}" class="card latest-media-card max-w-6xl mx-auto rounded-3xl shadow-2xl overflow-hidden border border-gray-100 lg:h-[280px] flex fade-in-up" data-delay="0">
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-0">
                 <div class="relative h-auto overflow-hidden lg:col-span-1">
-                    <img src="{{ env('CMS_URL') . $item->cover_img }}" alt="media-img" class="w-full h-full object-cover">
+                    <img src="{{ config('app.cms_url') . $item->cover_img }}" alt="media-img" class="w-full h-full object-cover">
                     <div class="absolute top-6 left-6">
                         @if ($item->category === 'News')
                             <span class="inline-block bg-secondary text-white text-xs px-4 py-2 rounded-full font-semibold">
