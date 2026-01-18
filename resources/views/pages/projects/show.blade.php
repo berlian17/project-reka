@@ -48,12 +48,14 @@
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 max-w-6xl mx-auto">
                 {{-- Main Content --}}
                 <div class="lg:col-span-2 fade-in-up" data-delay="0">
-                    <div class="card rounded-3xl shadow-2xl p-8 md:p-12 {{ $project->galleries->count() > 0 ? 'mb-8' : '' }}">
-                        <div class="project-content">
-                            <h3>Project Overview</h3>
-                            {!! clean($project->description) !!}
+                    @if ($project->description)
+                        <div class="card rounded-3xl shadow-2xl p-8 md:p-12 {{ $project->galleries->count() > 0 ? 'mb-8' : '' }}">
+                            <div class="project-content">
+                                <h3>Project Overview</h3>
+                                {!! clean($project->description) !!}
+                            </div>
                         </div>
-                    </div>
+                    @endif
 
                     {{-- Project Gallery --}}
                     @if ($project->galleries->count() > 0)

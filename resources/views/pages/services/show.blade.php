@@ -36,21 +36,23 @@
                                         <i class="{{ $item->icon }} text-secondary"></i>
                                         <span class="font-semibold text-primary">{{ $item->title }}</span>
                                     </a>
-                                </div>    
+                                </div>
                             @endforeach
                         </div>
                     </div>
                 </div>
 
                 {{-- Main Content --}}
-                <div class="lg:col-span-2 order-1 lg:order-2 fade-in-up" data-delay="0">
-                    <div class="card rounded-3xl shadow-2xl p-8 md:p-12">
-                        <div class="service-content">
-                            <h3>Service Overview</h3>
-                            {!! clean($service->long_desc) !!} 
+                @if ($service->long_desc)
+                    <div class="lg:col-span-2 order-1 lg:order-2 fade-in-up" data-delay="0">
+                        <div class="card rounded-3xl shadow-2xl p-8 md:p-12">
+                            <div class="service-content">
+                                <h3>Service Overview</h3>
+                                {!! clean($service->long_desc) !!}
+                            </div>
                         </div>
                     </div>
-                </div>
+                @endif
             </div>
         </div>
     </section>
